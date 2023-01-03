@@ -1,0 +1,366 @@
+*{
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+    }
+ .nav-first-section , .nav-second-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+ }
+ .nav-first-section{
+    padding-top: 15px;
+    margin-bottom: 10px;
+ }
+ .nav-second-section{
+ padding-bottom: 15px;
+ }
+ *{
+    font-family: Arial;
+ }
+.child {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    margin-left: -140px;
+    font-family: Roboto,Arial,Helvetica,sans-serif;
+    
+}
+.child > a{
+    color: #202340;
+}
+.logo{
+    width: 10%;
+}
+.logo > img{
+    width: 100%;
+}
+.humbergar-div , .logo{
+    margin-left: 25px;
+}
+.humbergar-div{
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.child-second-section , .second-logo{
+    margin-right: 25px;
+}
+.child-second-section{
+    width: 22%;
+    display: flex;
+    justify-content: space-between;
+}
+select{
+    padding: 13px 15px;
+    border: none;
+    border-radius: 50px;
+}
+select + input{
+    padding: 8px 80px;
+    width: 40%;
+    border: none;
+    border-left: 1px solid black;
+}
+
+form{
+    border: 1px solid black;
+    border-radius: 50px;
+    overflow: hidden;
+    width: 100%;
+    background: white;
+}
+.input-section{
+    width: 40%;
+    margin-left: -150px;
+}
+.btn1{
+    border: 2px solid black;
+    width: 50px;
+    position: absolute;
+    left:57.2%;
+    top:20px;
+    border: none;
+    border-radius:0px 50px 50px 0px;
+    padding: 4px;
+    text-align: center;
+    background-color:#202340;
+}
+.btn1>img{
+    width: 75%;
+}
+.navbar{
+    background: #f0f1f7;
+    position: sticky;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+
+}
+.child-second-section > a, .humbergar-div > a{
+    color: #202340;
+}
+
+
+.second-logo > img{
+    color: white;
+}
+a:hover{
+   color: #00a8ca
+}
+.btn1 > img{
+    color: white;
+}
+
+.top-section{
+    background-color: #202340;
+    color: white;text-align: center;padding: 7px;
+    font-size: 16px;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+.child-second-section p {
+    border: 1px solid black;
+    width: 25%;
+    border-radius: 50%;
+    text-align: center;
+}
+.cart-section{
+    position: relative;
+
+}
+.cart-section a{
+    color: #202340;
+}
+.cart-count{
+    position: absolute;
+    top: -15px;
+    left: 5px;
+    background-color: white;
+    font-size:15px;
+}
+/* .....................................HAMBERGER-MENU........................................... */
+
+#menu{
+    width: 30px;
+    height: 30px;
+    margin: 0px 0 0px 25px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+ .bar{
+    height: 5px;
+    width: 100%;
+    background-color: #202340;
+    display: block;
+    border-radius:5px;
+    transition: 0.3s ease;
+} 
+
+#bar1{
+    transform: translateY(-4px);
+}
+#bar3{
+    transform: translateY(4px);
+}
+
+.nav li a{
+    color: #202340;
+    text-decoration: none;
+}
+
+.nav li a:hover{
+    border: 1px solid #fff;
+    /* padding: 10px 20px; */
+}
+
+.nav li{
+    list-style: none;
+    padding: 16px 0;
+    margin-left: 20px;
+}
+.nav h4{
+    margin-left: 20px;
+   margin-top: 180px;
+   margin-bottom: 10px;
+}
+
+.nav li:nth-child(2){
+    margin-left: 20px;
+}
+.nav{
+    padding: 0;
+    margin: 0 20px ;
+    transition: 1s ease;
+    display: none;
+}
+.icon .bar{
+    background-color: #202340;
+}
+
+.icon #bar1{
+    transform: translateY(4px) rotate(-45deg);
+}
+
+.icon #bar3{
+    transform: translateY(-6px) rotate(45deg);
+}
+
+.icon #bar2{
+    opacity: 0;
+}
+
+.change{
+background-color: #ffffff;
+height: 100vh;
+margin: 0;
+position: absolute;
+font-size: 15px;
+top: 0;
+z-index: -100;
+width: 20%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+@media only screen and (max-width:1000px){
+    .change{
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width:500px){
+    .change{
+        width: 100%;
+    }
+}
+/* ..................End here Categorie Section................. */
+
+.navbar-below-section{
+    display:flex;
+    justify-content: space-between;
+    background-color:#f0f1f7;
+}
+.navbar-below-section p{
+margin:0px 20px;
+padding: 8px;
+font-size:.75rem;
+line-height: 1.25rem;
+font-family: Roboto,Arial,Helvetica,sans-serif;
+color: #202340;
+}
+
+.small-img{
+    height: 10px;
+}
+
+.small-img-two{
+    height: 10px;
+}
+
+.bolder-text{
+  font-weight: bold;
+}
+.second-navbar-below-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0px;
+    margin-bottom: 30px;
+}
+
+.second-navbar-below-section > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20%;
+}
+.second-navbar-below-section > p{
+ font-size: 29.824px;
+ font-weight: 400;
+ margin-right: 10px;
+ font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+.btn2{
+    padding: 10px;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #fff;
+   }
+
+   .btn2:hover{
+    background-color:#202340;
+    color: white;
+   }
+
+   .popular-brand-section{
+    display: flex;
+    width: 100%;
+   }
+   .brands-div{
+    display: flex;
+    justify-content: space-around;
+    
+   }
+ 
+   .poster{
+    width: 100%;
+   }
+   .poster > img{
+    width: 100%;
+   }
+   .second-brands-div{
+    display: flex;
+   }
+
+   .left-side-img{
+    width: 40%;
+    overflow: hidden;
+   }
+   .left-side-img > img{
+    width: 100%;
+   }
+   .popular-brands{
+    text-align: center;
+    width: 20%;
+    margin:20px auto 60px 800px;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 28px;
+    padding-top:20px ;
+   }
+   .parent-div{
+    margin-left: 0px;
+    width: 100%;
+   }
+.second-brands-div{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-bottom: 80px;
+}
+.second-brands-div > div{
+ margin-top: 30px;
+}
+.second-brands-div  p{
+    line-height: 20px;
+    font-size: 11px;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+.second-brands-div  h4{
+    margin-top: 5px;
+    margin-bottom:7px;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+.main-div{
+    margin-top:10px ;
+    background: white;
+}
+body{
+    background: #f0f1f7;
+}
