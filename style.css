@@ -77,8 +77,8 @@ form{
     width: 40%;
     margin-left: -150px;
 }
+
 .btn1{
-    border: 2px solid black;
     width: 50px;
     position: absolute;
     left:57.2%;
@@ -95,8 +95,9 @@ form{
 .navbar{
     background: #f0f1f7;
     position: sticky;
+    top: 0;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-
+    /* border: 2px solid black; */
 }
 .child-second-section > a, .humbergar-div > a{
     color: #202340;
@@ -345,6 +346,7 @@ color: #202340;
 .second-brands-div > div{
  margin-top: 30px;
 }
+
 .second-brands-div  p{
     line-height: 20px;
     font-size: 11px;
@@ -363,4 +365,99 @@ color: #202340;
 }
 body{
     background: #f0f1f7;
+}
+
+
+
+.mid-logo{
+    /* border: 2px solid black; */
+    width: 10%;
+    position: absolute;
+    left: 45%;
+    top:158%;
+}
+.mid-logo > img{
+    width:100%;
+}
+
+.mid-section-grid-layout{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* border: 2px solid black; */
+    margin-top: 20px;
+    background: white;
+}
+.mid-section-grid-layout > div{
+    /* border: 2px solid black; */
+    width: 80%;
+    margin: auto;
+    margin-top: 72px;
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+.mid-section-grid-layout  p{
+    line-height: 20px;
+    font-size: 11px;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+.mid-section-grid-layout  h4{
+margin-top: 5px;
+margin-bottom:7px;
+font-family: Roboto, Arial, Helvetica, sans-serif;
+font-weight: 700;
+}
+
+.mid-section-grid-layout  img{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.parent-of-newyear{
+    margin: auto;
+    /* border: 2px solid black; */
+    width: 95%;
+    background: white;
+    margin-top: 20px;
+}
+.new-year-section{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    /* border: 2px solid black; */
+    gap:50px 0px;
+    width: 92%;
+    margin: auto;
+    background: white;
+    padding-bottom: 20px;
+}
+.new-year-section > div{
+    margin: auto;
+    width: 80%;
+    /* border: 2px solid black; */
+    text-align: center;
+}
+.new-year-section img{
+    width: 100%;
+    border-radius: 80%;
+    border: 10px solid #cbcdd4;
+}
+
+.new-year-section p{
+    font-size:16px;
+    color: rgb(32, 35, 64);
+    font-weight: 700;
+    margin-top: 10px;
+    text-align: center;
+    /* border: 2px solid black; */
+    
+}
+.heading-of-newyear {
+    text-align: center;
+    /* border: 2px solid black; */
+}
+.heading-of-newyear > h2 {
+    font-size: 38px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 25px 0px;
+    /* border: 2px solid black; */
+    padding-top: 15px;
 }
