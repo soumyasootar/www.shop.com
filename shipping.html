@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Address</title>
+    <title>Shipping</title>
     <style>
         *{
             padding: 0px;
@@ -17,8 +17,6 @@
             -webkit-box-shadow: 0 0 8px #202340;
             box-shadow: 0 0 8px #202340;
             padding: 5px 10px;
-            /* position: fixed; */
-            /* position:absolute; */
             top: 0;
             width: 100%;
             z-index: 10;
@@ -29,10 +27,6 @@
         #navbar>img{
             width: 200px;
         }
-        /* #navbar>img:hover{
-            border: 1px dashed black;
-            position: relative
-        } */
         #navbar>a{
             margin-right: 30px;
             margin-top: 4px;
@@ -89,7 +83,7 @@
             /* gap: 25px; */
             margin-right: 10px;
         }
-        .threebuttons>:first-child{
+        .threebuttons>:nth-child(2){
             background-color: #545871;
             color:white;
         }
@@ -106,11 +100,15 @@
         #left1{
             display: flex;
             justify-content: space-between;
+            background-color: #e0e1e6;
+            padding:10px;
+            font-size: 15px;
+            
 
         }
         .right{
-            border: #00a8ca;
             margin-right: 50px ;
+            width: 400px;
         }
         #right1{
             margin-top: 20px;
@@ -127,7 +125,7 @@
             margin-top: 20px;
         }
         #right3a,#right3b{
-            font-size: 16px;
+            font-size: 19px;
             font-weight: 700;
             color: #202340;
         }
@@ -160,27 +158,32 @@
             border-radius: 30px;
             margin-bottom: 20px;
         }
+        #rightl1{
+            color: #545871;
+            font-size: xx-large;
+        }
+        #right2a,#right201,#right204{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        #right7 button{
+            background-color: #414467;
+            border-radius: 20px ;
+            color: white;
+            font-weight: bold;
+            font-size: large;
+            padding: 10px;
+            margin-left: 129px;
+        }
         #right8{
-            margin-top: 10px;
-        }
-        #right8 a,#right9 a{
-            color:#414467;
-            font-size: small;
-        }
-        #right8 ,#right9 {
-            /* color:#414467; */
-            font-size: small;
-        }
-        #right9{
-            margin-left: 20px;
-            margin-top: 20px;
+            margin-left: 5px;
+            margin-top: 19px;
             background-color: #F0F1f7;
             color:#202340;
             padding-top: 10px;
             padding-bottom: 10px;
             padding-left: 10px;
-            width:400px;
-            text-align: center;
         }
         /* footer  */
         /* cart footer */
@@ -235,35 +238,62 @@
         <br>
         <hr>
         <br>
+        <h2 style="color: #545871;margin-left: 14px;">Seven Times Six Shipment</h2>
+        <br>
         <div id="bottom" >
             <div id="left">
+                <hr>
+                <br>
                 <div id="left1">
-                    <p id="line4a" style="font-weight: bold;">Shipping Address</p>
-                    <a id="line4b" href="./shipping address form.html" style="color:#2E2C38 ;">add address</a>
+                    <p>
+                       <img src="https://cdn.pixabay.com/photo/2016/04/01/10/09/black-and-white-1299789_960_720.png" alt="truck" style="width: 20px;"> Congratulations! Your order qualifies for free shipping from Seven Times Six.
+                    </p>
+                    <a href="#">Learn More <img src="https://cdn.pixabay.com/photo/2016/03/31/19/13/information-1294813_960_720.png" alt="i" style="width:14px;"> </a> <p> or </p>
+                    <a href="#">Go to this storefront</a>
                 </div>
                 <br>
-                <p id="address" href="" >Choose Address</p>
-                <!-- address fill via js -->
+                <div id="productinfo">
+                    <!-- filled via js  -->
+                </div>
             </div>
             <div class="right">
-                <h2 id="rightl1">Order Summary</h2>
-                <hr id="right2">
-                <div id="right3">
-                    <p id="right3a">Order Total:</p>
-                    <p id="right3b">$0.00</p>
+                <p id="line4a">Shipping Address</p>
+                <div id="box4"></div>
+                <div id="right">
+                    <h2 id="rightl1">Order Summary</h2>
+                    <hr id="right2">
+                    <br>
+                    <div id="right2a">
+                        <p id="right2aa">Items Subtotal:</p>
+                        <p id="right2ab">$0.00</p>
+                    </div>
+                    <div id="right201">
+                        <p id="right202">Tax Total:</p>
+                        <p id="right203">$0.00</p>
+                    </div>
+                    <div id="right204">
+                        <p id="right205">Shipping:</p>
+                        <p id="right206">FREE</p>
+                    </div>
+                    <hr id="right207">
+                    <div id="right3">
+                        <p id="right3a">Order Total:</p>
+                        <p id="right3b">$0.00</p>
+                    </div>
+                    <div id="right4">
+                        <p id="right4a"> <img src="https://img.shop.com/Image/resources/images/cashback-icon.svg" alt="$" style="width: 13px;"> Cashback earned on this order:</p>
+                        <p id="right4b">$0.29</p>
+                    </div>
+                    <hr id="right5">
+                    <br>
+                    <div id="right7">
+                        <a id="right7a" href="./address.html" style="color: black;"> <img src="https://cdn.pixabay.com/photo/2012/04/10/23/37/arrow-27066_960_720.png" alt="$" style="width: 13px;"> Address</a>
+                        <a href="./payment.html"> <button id="right7b">Continue Checkout</button></a>
+                    </div>
+                    <p id="right8">Let us know how we are doing <a href="#">Send Feedback</a>
                 </div>
-                <div id="right4">
-                    <p id="right4a"><img src="https://img.shop.com/Image/resources/images/cashback-icon.svg" alt="cashback-icon" style="width: 14px;"> Cashback earned on this order:</p>
-                    <p id="right4b">$0.29</p>
-                </div>
-                <hr id="right5">
-                <a href="./shipping.html"><button id="right6">Continue Checkout</button></a>
-                <p id="right7">By clicking continue, you agree to the SHOP.COM</p>
-                <p id="right8"><a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>.</p>
-                <p id="right9">Let us know how we are doing <a href="#">Send Feedback</a></p>
             </div>
         </div>
-    </div>
     <!-- footer  -->
     <div id="cart-footer">
         <div class="dis">
