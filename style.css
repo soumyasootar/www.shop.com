@@ -371,7 +371,6 @@ body{
 
 
 .mid-logo{
-    /* border: 2px solid black; */
     width: 10%;
     margin-left: 45%;
     margin-top: -80px;
@@ -384,12 +383,10 @@ body{
 .mid-section-grid-layout{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* border: 2px solid black; */
     margin-top: 20px;
     background: white;
 }
 .mid-section-grid-layout > div{
-    /* border: 2px solid black; */
     width: 80%;
     margin: auto;
     margin-top: 72px;
@@ -415,7 +412,6 @@ font-weight: 700;
 }
 .parent-of-newyear{
     margin: auto;
-    /* border: 2px solid black; */
     width: 95%;
     background: white;
     margin-top: 20px;
@@ -423,7 +419,6 @@ font-weight: 700;
 .new-year-section{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    /* border: 2px solid black; */
     gap:50px 0px;
     width: 92%;
     margin: auto;
@@ -433,7 +428,6 @@ font-weight: 700;
 .new-year-section > div{
     margin: auto;
     width: 80%;
-    /* border: 2px solid black; */
     text-align: center;
 }
 .new-year-section img{
@@ -448,18 +442,14 @@ font-weight: 700;
     font-weight: 700;
     margin-top: 10px;
     text-align: center;
-    /* border: 2px solid black; */
-    
 }
 .heading-of-newyear {
     text-align: center;
-    /* border: 2px solid black; */
 }
 .heading-of-newyear > h2 {
     font-size: 38px;
     font-family: Arial, Helvetica, sans-serif;
     margin: 25px 0px;
-    /* border: 2px solid black; */
     padding-top: 15px;
 }
 
@@ -468,19 +458,15 @@ font-weight: 700;
 /* ............Brand Section css.......... */
 .brand-section-cards{
     display: flex;
-    /* border: 2px solid black; */
     width: 100%;
     margin: auto;
     text-align: center;
     background: white;
-    /* margin-bottom: 20px; */
 }
 .brand-section-cards > div{
-    /* border: 2px solid blue; */
     margin: auto;
 }
 .brand-section{
-/* border: 3px solid green; */
 width: 95%;
 margin: auto;
 margin-top: 15px;
@@ -495,13 +481,11 @@ margin-top: 15px;
     text-align: center;
     padding: 10px 0px 20px 0px;
     background: white;
-    /* border: 2px solid black; */
 }
 
 /*.............Brand Section css end..............  */
 
 .white-space-div{
-    /* border: 2px solid black; */
     padding: 0px 0px 50px 0px;
     color: white;
     background: white;
@@ -510,7 +494,6 @@ margin-top: 15px;
 }
 /* ....................Footer Section CSS part...................... */
 .first-div{
-    /* border: 2px solid black; */
     display: flex;
     justify-content: space-between;
     width: 95%;
@@ -522,7 +505,6 @@ margin-top: 15px;
 }
 .emailbox{
     padding: 2px 80px 2px 0px;
-    /* border: 2px solid rgb(255, 9, 9); */
 }
 .first-div label, span{
     font-size: .8125rem;
@@ -539,11 +521,9 @@ margin-top: 15px;
     color: white;
 }
 .first-div div:nth-child(1){
-    /* border: 2px solid black; */
    padding-left: 10px;
 }
 .first-div div:nth-child(2){
-    /* border: 2px solid black; */
    padding-right: 10px;
 }
 .first-div div:nth-child(2) > button{
@@ -553,7 +533,6 @@ margin-top: 15px;
     margin-left: 6px;
 }
 .second-div {
-    /* border: 2px solid black; */
     display: flex;
     justify-content: space-between;
     width:94.5%;
@@ -572,7 +551,6 @@ margin-top: 15px;
     border: none;
 }
 .footer-logos{
-    /* border: 2px solid white; */
     width:20px;
     display: flex;
     margin-bottom: 10px;
@@ -581,13 +559,11 @@ margin-top: 15px;
     left: 88%;
 }
 .footer-logos > img{
-    /* border: 2px solid white; */
     width:100%;
     padding: 0px 5px;
 }
 
 .footer-copyright-section{
-    /* border-top: 2px solid blue; */
     width: 95%;
     margin: auto;
     font-size: .6875rem;
@@ -602,7 +578,6 @@ margin-top: 15px;
     color: #202340;
 }
 .footer-img-section{
-    /* border-top: 2px solid black; */
     width:95%;
     margin: auto;
     text-align: center;
@@ -613,3 +588,133 @@ margin-top: 15px;
     height: 90px;
 }
 
+/* Cleaning & Health Have Never Been More Important Section */
+.product {
+    overflow: hidden;
+    padding: 20px;
+    background-color: white;
+    width: 92.5%;
+    margin: auto;
+    margin-top: 20px;
+  }
+ 
+  .product-category {
+    padding: 0 10px;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .product-container {
+    padding: 0 20px;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+  }
+  
+  /* .product-container::-webkit-scrollbar {
+    /* display: none; */
+/* background: rgb(255, 203, 203); */
+  /* }  */
+ 
+  .product-card {
+    flex: 0 0 auto;
+    width: 250px;
+    margin-right: 40px;
+    text-align: left;
+}
+.product-card  img{
+    height: 250px;
+    width: 100%;
+    margin-bottom: -20px;
+  }
+  .product-card  img + h4{
+    margin-bottom: 5px;
+  }
+  .product-thumb {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .product-brand {
+    text-transform: capitalize;
+  }
+  
+  .product-short-description {
+    height: 20px;
+    line-height: 20px;
+    margin: 5px 0;
+    font-size: 12px;
+  }
+
+ /* ,......................Healthy Hair with Fixx Section.......................... */
+ .product-one {
+    display: flex;
+    overflow: hidden;
+    padding: 20px;
+    background-color: white;
+    width: 92.5%;
+    margin: auto;
+    margin-top: 20px;
+  }
+ 
+  .product-category-one {
+    padding: 0 10px;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .product-container-one {
+    padding: 0 20px;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+  }
+  
+  .product-card-one {
+    flex: 0 0 auto;
+    width: 250px;
+    margin-right: 40px;
+    text-align: left;
+}
+.product-card-one  img{
+    height: 250px;
+    width: 100%;
+    margin-bottom: -20px;
+  }
+  .product-card-one  img + h4{
+    margin-bottom: 5px;
+  }
+  .product-thumb-one {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .product-brand-one {
+    text-transform: capitalize;
+  }
+  
+  .product-short-description-one {
+    height: 20px;
+    line-height: 20px;
+    margin: 5px 0;
+    font-size: 12px;
+  }
+  .product-one-img{
+    width: 50%;
+  }
+  .product-one-img img{
+    width: 100%;
+  }
+  .product-category-one{
+    width:93.5%;
+    margin: auto;
+    background: white;
+    padding-left: 15px;
+    margin: 20px 0px -25px 38px;
+  }
