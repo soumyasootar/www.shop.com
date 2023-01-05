@@ -491,6 +491,7 @@ function displayfun(q) {
 
 var cartArr = JSON.parse(localStorage.getItem("cart-list")) || [];
 var count = localStorage.getItem("cartcount") || 0;
+document.querySelector(".cart-count").innerText = count;
 
 function cart(elem, i) {
     cartArr.push(elem);

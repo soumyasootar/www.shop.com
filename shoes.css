@@ -368,6 +368,7 @@ body {
 }
 #main{
     display: flex;
+    gap: 5px;
 }
 #sidebar{
     text-align: left;
@@ -435,6 +436,9 @@ body {
 }
 #filtermen,#filterwomen, #filterkids,#filter{
     cursor: pointer;
+}
+#filtergame,#filterhome, #filterapparel,#filterfootball,#filtershorts,#filterbath,#filterbath1,#filterbath2,#filterbath3,#filterbath4,#filter{ 
+    cursor: pointer; 
 }
 /* <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= --> */
 .first-div{
