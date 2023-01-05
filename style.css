@@ -7,7 +7,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-   
+   width: 100%;
  }
  .nav-first-section{
     padding-top: 15px;
@@ -32,9 +32,7 @@
 .child > a{
     color: #202340;
 }
-.logo{
-    width: 10%;
-}
+
 .logo > img{
     width: 100%;
 }
@@ -48,8 +46,12 @@
     align-items: center;
     text-align: center;
 }
-.child-second-section , .second-logo{
+.child-second-section {
     margin-right: 25px;
+}
+.second-logo{
+    margin-right: 25px;
+    text-align: right;
 }
 .child-second-section{
     width: 22%;
@@ -74,23 +76,20 @@ form{
     border: 1px solid black;
     border-radius: 50px;
     overflow: hidden;
-    width: 100%;
+    width: 85%;
     background: white;
 }
 .input-section{
-    width: 40%;
+    width: 20%;
     margin-left: -150px;
 }
 
 .btn1{
-    
         background-color: #202340; 
-        margin-left: 17.5px; 
         height: 45px; 
         width: 30px; 
         padding-right: 15px; 
-        border-radius: 0px 50px 50px 0px; 
-   
+        border-radius: 0px 50px 50px 0px;
 }
 .btn1>img{
     width: 75%;
@@ -106,10 +105,18 @@ margin-top: -5px;
 .child-second-section > a, .humbergar-div > a{
     color: #202340;
 }
-
+.nav-bar-input{
+    font-size: 15px;
+    width: 100%;
+}
+.nav-bar-input:focus {
+    outline: none;
+    font-size: 15px;
+  }
 
 .second-logo > img{
     color: white;
+    
 }
 a:hover{
    color: #00a8ca
@@ -138,6 +145,9 @@ a:hover{
 .cart-section a{
     color: #202340;
 }
+
+
+
 .cart-count{
     position: absolute;
     top: -15px;
@@ -206,11 +216,11 @@ a:hover{
 }
 
 .icon #bar1{
-    transform: translateY(4px) rotate(-45deg);
+    transform: translateY(5px) rotate(-45deg);
 }
 
 .icon #bar3{
-    transform: translateY(-6px) rotate(45deg);
+    transform: translateY(-5px) rotate(45deg);
 }
 
 .icon #bar2{
@@ -263,7 +273,8 @@ color: #202340;
 }
 
 .small-img-two{
-    height: 10px;
+    height: 15px;
+    width: 15px;
 }
 
 .bolder-text{
@@ -274,7 +285,9 @@ color: #202340;
     justify-content: center;
     align-items: center;
     padding: 5px 0px;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
+    background: white;
+    padding-bottom: 50px;
 }
 
 .second-navbar-below-section > div{
@@ -295,6 +308,7 @@ color: #202340;
     font-size: 15px;
     font-weight: bold;
     background-color: #fff;
+    border: 1px solid black;
    }
 
    .btn2:hover{
@@ -317,6 +331,7 @@ color: #202340;
    }
    .poster > img{
     width: 100%;
+    margin-top: -20px;
    }
    .second-brands-div{
     display: flex;
@@ -424,7 +439,7 @@ font-weight: 700;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap:50px 0px;
-    width: 92%;
+    width: 90%;
     margin: auto;
     background: white;
     padding-bottom: 20px;
@@ -540,12 +555,13 @@ margin-top: 15px;
 .second-div {
     display: flex;
     justify-content: space-between;
-    width:100%;
+    width:99%;
     margin: auto;
     font-size: .75rem;
     font-weight: 700;
     padding: 10px 0px 10px 6px;
     background: #545871;
+    /* border: 3px solid white; */
 }
 .second-div a{
     padding: 0px 4px 0px 4px;
@@ -615,7 +631,6 @@ margin-top: 15px;
     padding: 0 20px;
     display: flex;
     overflow-x: auto;
-    scroll-behavior: smooth;
   }
   
   /* .product-container::-webkit-scrollbar {
@@ -755,3 +770,27 @@ margin-top: 15px;
     background:  #202340;
     color: white;
   }
+
+
+
+  #myBtn {
+     /* display: none; */
+     position: fixed;
+     bottom: 20px; 
+     right: 30px; 
+     z-index: 99; 
+     border: none;
+     outline: none;
+     cursor: pointer;
+     padding: 10px;  
+    font-size: 18px; 
+    background: transparent;
+}
+#myBtn img{
+    color: navy;
+    height: 45px;
+    width: 45px;
+  }
+  /* #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  /* }  */
