@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shipping</title>
+    <title>Payment</title>
     <style>
         *{
             padding: 0px;
@@ -83,7 +83,7 @@
             /* gap: 25px; */
             margin-right: 10px;
         }
-        .threebuttons>:nth-child(2){
+        .threebuttons>:nth-child(3){
             background-color: #545871;
             color:white;
         }
@@ -173,8 +173,9 @@
             color: white;
             font-weight: bold;
             font-size: large;
-            padding: 10px;
-            margin-left: 129px;
+            margin-left: 80px;
+            height: 40px;
+            width: 230px;
         }
         #right8{
             margin-left: 5px;
@@ -216,6 +217,89 @@
             color: #00a8ca;
             cursor: pointer;
         }
+        #left3{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        #left3 input{
+            margin-top: 25px;
+        }
+        /* bottom  */
+        #bottom {
+    display: flex;
+}
+
+#bottom-left {
+    /* width: 50%; */
+    padding-left: 10px;
+}
+
+#bottom-right1{
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#bottom-right2 {
+    font-size: medium;
+    margin-top: 15px;
+}
+
+#bottom-right3 {
+    display: flex;
+    gap: 7px;
+    /* margin-top: 15px; */
+}
+
+#bottom-right3b {
+ padding: 10px 15px;
+ width: 85px;
+ border-radius: 30px;
+ border: 0.5px solid black;
+ font-weight: bold;
+}
+#bottom-right4a,#bottom-right6a{
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+#r0{
+    background-color: #F0F1F7;
+    padding: 10px;
+    padding-left: 15px;
+}
+#r6{
+    display: flex;
+}
+#r6a{
+    width: 20px;
+    margin-right: 10px
+}
+#r6b{
+    font-size: small;
+    font-weight: bold;
+}
+#r6c{
+    margin-top: 8px;
+    color: #545871;
+    /* font-weight: bold; */
+}
+#r6d{
+    padding: 10px;
+    width: 208px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#r6e{
+    font-size: small;
+}
+#right7b{
+    margin-top: 20px;
+    width: 150px;
+    
+}
+
     </style>
 </head>
 <body>
@@ -238,26 +322,83 @@
         <br>
         <hr>
         <br>
-        <h2 style="color: #545871;margin-left: 14px;">Seven Times Six Shipment</h2>
         <br>
         <div id="bottom" >
             <div id="left">
+                <p>Select payment method</p>
+                <br>
+                <ul class="list-group" id="left2" style="border: 1px solid #DADBE6; ">
+                    <li class="list-group-item" id="left3" style="margin: 10px;">
+                        <input type="radio">
+                        <p>Enter Payment Method
+                        <img src="https://img.shop.com/Image/local/images/cc/amex.jpg
+                        " alt="">
+                        <img src="https://img.shop.com/Image/local/images/cc/discover.jpg" alt="">
+                        <img src="	https://img.shop.com/Image/local/images/cc/mastercard.png" alt="">
+                        <img src="	https://img.shop.com/Image/local/images/cc/visa.jpg" alt=""></p>
+                    </li>
+                    <hr>
+                    <li class="list-group-item" id="left3" style="margin: 10px;">
+                        <input type="radio">
+                        <img src="https://bitpay.com/cdn/merchant-resources/bitpay-accepted-card-group.svg" alt="" style="width: 200px;">
+                    </li>
+                    <hr>
+                    <li class="list-group-item" id="left3" style="margin: 10px;">
+                        <input type="radio">
+                        <img src="https://img.shop.com/Image/local/images/cc/SezzlePaymentBtn_Small-purple.svg" alt="" style="width: 200px;">
+                    </li>
+                    <hr>
+                    <li class="list-group-item" id="left3" style="margin: 10px;">
+                        <input type="radio">
+                        <img src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/checkout-logo-medium.png"
+                            alt="">
+                    </li>
+                    <hr>
+                    <li class="list-group-item" id="left3" style="margin: 10px;">
+                        <input type="radio">
+                        <img src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/ppcredit_MD_BNPOT_1x.png"
+                            alt="">
+                    </li>
+                    <hr>
+                    <li class="list-group-item" id="left3" style="margin: 10px;">
+                        <input type="radio">
+                        <img src="https://src.mastercard.com/assets/img/btn/src_chk_btn_147x034px.svg?locale=en_us&paymentmethod=master,visa,discover,amex&checkoutid=a4a6w4v6h7cg0iaijxn0j1iaoelnus5936"
+                            alt="">
+                    </li>   
+                </ul>
+                <br>
                 <hr>
                 <br>
-                <div id="left1">
-                    <p>
-                       <img src="https://cdn.pixabay.com/photo/2016/04/01/10/09/black-and-white-1299789_960_720.png" alt="truck" style="width: 20px;"> Congratulations! Your order qualifies for free shipping from Seven Times Six.
-                    </p>
-                    <a href="#">Learn More <img src="https://cdn.pixabay.com/photo/2016/03/31/19/13/information-1294813_960_720.png" alt="i" style="width:14px;"> </a> <p> or </p>
-                    <a href="#">Go to this storefront</a>
-                </div>
-                <br>
-                <div id="productinfo">
-                    <!-- filled via js  -->
+                <div>
+                    <div id="bottom">
+                        <div id="bottom-left">
+                            <p id="bottom-left1" style="font-weight: bold;">Shipping Address</p>
+                            <!-- js for shipping adress  -->
+                        </div>
+                        <div id="bottom-right">
+                            <p id="bottom-right1">Coupon/Gift Card</p>
+                            <p id="bottom-right2">Coupon</p>
+                            <div id="bottom-right3">
+                                <input id="bottom-right3a" font-style="italic" type="text" placeholder="Coupon Code">
+                                <button id="bottom-right3b">Apply</button>
+                            </div>
+                            <p id="bottom-right40" style="margin-top: 10px;">Gift Card</p>
+                            <div id="bottom-right4">
+                                <input id="bottom-right4a" font-style="italic" type="text" placeholder="Gift card number">
+                                <!-- <button id="bottom-right4b">Apply</button> -->
+                            </div>
+                            <p id="bottom-right5">Pin:</p>
+                            <div id="bottom-right6">
+                                <input id="bottom-right6a" font-style="italic" type="text" placeholder="Pin">
+                                <button id="bottom-right3b">Apply</button>
+                            </div>
+    
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="right">
-                <p id="line4a">Shipping Address</p>
+                <p id="line4a" ">Shipping Address</p>
                 <div id="box4"></div>
                 <div id="right">
                     <h2 id="rightl1">Order Summary</h2>
@@ -275,6 +416,10 @@
                         <p id="right205">Shipping:</p>
                         <p id="right206">FREE</p>
                     </div>
+                    <div id="right204">
+                        <p id="right205">Discount:</p>
+                        <p id="right206">$<span id="discount">0.00</span></p>
+                    </div>
                     <hr id="right207">
                     <div id="right3">
                         <p id="right3a">Order Total:</p>
@@ -286,9 +431,18 @@
                     </div>
                     <hr id="right5">
                     <br>
+                    <div id="r0">
+                        <div id="r6">
+                            <input type="checkbox" id="r6a">
+                            <p id="r6b">Get text alerts for this order</p>
+                        </div>
+                        <p id="r6c">Mobile Phone</p>
+                        <input id="r6d" type="number" placeholder="Please enter your 10 digit phone">
+                        <p id="r6e">Message and data rates may apply</p>
+                    </div>
                     <div id="right7">
-                        <a id="right7a" href="./address.html" style="color: black;"> <img src="https://cdn.pixabay.com/photo/2012/04/10/23/37/arrow-27066_960_720.png" alt="$" style="width: 13px;"> Address</a>
-                        <a href="./payment.html"> <button id="right7b">Continue Checkout</button></a>
+                        <a id="right7a" href="./shipping.html" style="color: black;"> <img src="https://cdn.pixabay.com/photo/2012/04/10/23/37/arrow-27066_960_720.png" alt="$" style="width: 13px;"> Shipping</a>
+                        <a href="./payment.html"> <button id="right7b">Place Order</button></a>
                     </div>
                     <p id="right8">Let us know how we are doing <a href="#" style="color: #545871;">Send Feedback</a>
                 </div>
