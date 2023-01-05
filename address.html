@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/x-icon" href="https://img.shop.com/Image/resources/logos/shop-s-logo-icon.svg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Address</title>
     <style>
@@ -213,6 +214,22 @@
             color: #00a8ca;
             cursor: pointer;
         }
+        /* adress box  */
+        
+        #boxx{
+            display: flex;
+            border: 1px dashed #545871;
+            gap: 10px;
+            padding: 10px;
+            font-style: italic;
+        }
+        #boxx1 p{
+            margin: 2px;
+        }
+        #boxx1{
+            display: flex;
+            flex-direction: column;
+        }
     </style>
 </head>
 <body>
@@ -250,11 +267,11 @@
                 <hr id="right2">
                 <div id="right3">
                     <p id="right3a">Order Total:</p>
-                    <p id="right3b">$0.00</p>
+                    <p id="right3b">$<span id="total">0.00</span></p>
                 </div>
                 <div id="right4">
                     <p id="right4a"><img src="https://img.shop.com/Image/resources/images/cashback-icon.svg" alt="cashback-icon" style="width: 14px;"> Cashback earned on this order:</p>
-                    <p id="right4b">$0.29</p>
+                    <p id="right4b">$1.29</p>
                 </div>
                 <hr id="right5">
                 <a href="./shipping.html"><button id="right6">Continue Checkout</button></a>
@@ -279,3 +296,34 @@
     </div>
 </body>
 </html>
+<script>
+    var address=JSON.parse(localStorage.getItem("address-form"))
+    total=JSON.parse(localStorage.getItem("total-payment"))||0
+    document.querySelector("#total").textContent=total
+    document.querySelector("#right3b>#total").textContent=total
+    showaddress(address)
+    function showaddress(obj){
+        console.log("hi",address)
+        var div1=document.createElement("div")
+        div1.setAttribute("id","boxx")
+        var input=document.createElement("input")
+        input.setAttribute("type","radio")
+        var name=document.createElement("p")
+        name.innerText=obj.firstname1+" "+obj.lastname1;
+        var address= document.createElement("p")
+        address.textContent=obj.address1;
+        var city=document.createElement("p")
+        city.innerText=obj.city1;
+        var state=document.createElement("p")
+        state.innerText= obj.state1;
+        var zip=document.createElement("p")
+        zip.textContent= obj.zip1;
+        var phone=document.createElement("p")
+        phone.textContent= obj.phone1;
+        var div2=document.createElement("div")
+        div2.setAttribute("id","boxx1")
+        div2.append(name,address,city,state,phone)
+        div1.append(input,div2)
+        document.getElementById("left").append(div1)
+    }
+</script>

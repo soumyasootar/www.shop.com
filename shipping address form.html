@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://img.shop.com/Image/resources/logos/shop-s-logo-icon.svg">
     <title>Address</title>
     <style>
         *{
@@ -178,7 +179,6 @@
     </div>
     <!-- MID SECTION  -->
     <div id="mid">
-
         <div id="body">
             <h1 id="heading_ship">Shipping Address Form</h1>
             <p id="fiels">* Indicates required field</p>
@@ -241,7 +241,7 @@
             </div>
             <div id="phone">
                 <label>Phone*<br>
-                    <input type="text" placeholder="Please enter your 10 digit phone number">
+                    <input type="text" id="phone_number" placeholder="Please enter your 10 digit phone number">
                 </label>
             </div>
             <div id="phone123">
@@ -251,3 +251,21 @@
     </div>
     </body>
     </html>
+    <script>
+        document.getElementById("save").addEventListener("click",addressfill)
+        function addressfill(){
+            event.preventDefault()
+            console.log("click")
+            var obj={
+                firstname1:document.getElementById("first_name").value,
+                lastname1:document.getElementById("last_name").value,
+                address1:document.getElementById("address").value,
+                city1:document.getElementById("city").value,
+                state1:document.getElementById("state").value,
+                zip1:document.getElementById("zip").value,
+                phone1:document.getElementById("phone_number").value
+            }
+            localStorage.setItem("address-form",JSON.stringify(obj))
+            window.open("./address.html","_self")
+        }
+    </script>

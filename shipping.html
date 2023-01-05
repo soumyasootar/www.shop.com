@@ -217,6 +217,76 @@
             color: #00a8ca;
             cursor: pointer;
         }
+         /* adress box  */
+        
+         #boxx{
+            display: flex;
+            border: 1px dashed #545871;
+            gap: 10px;
+            padding: 10px;
+            font-style: italic;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        #boxx1 p{
+            margin: 2px;
+        }
+        #boxx1{
+            display: flex;
+            flex-direction: column;
+        }
+        /* CART  */
+        #box12{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            border: 1px dashed gray;
+            margin: 10px;
+        }
+        #box12>img{
+            width:20%;
+        }
+        #boxx12>:nth-child(3){
+            /* width:20%; */
+            font-size: medium;
+            color:rgb(88, 85, 85);
+            font-weight: bold;
+            margin-bottom: 6px;
+        }
+        #boxx12>:nth-child(4){
+            /* width:20%; */
+            font-size: small;
+            color:rgb(66, 64, 64);
+            font-weight: bold;
+        }
+        #boxxxx12{
+            display: flex;
+            margin: 5px;
+            font-size: small;
+            margin-left:-1px;
+            font-style: italic;
+        }
+        #boxxxx12>img{
+            width:2%;
+        }
+        #boxx12{
+            /* border: 1px solid red; */
+            width: 75%;
+            
+        }
+        #boxxx12{
+            /* border: 1px solid red; */
+            display: flex;
+            width: 100%;
+            gap: 10px;
+            justify-content: space-between;
+            padding: 10px;
+            margin-left:-10px;
+        }
+        #price111{
+            color:rgb(35, 37, 37);
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
@@ -266,11 +336,11 @@
                     <br>
                     <div id="right2a">
                         <p id="right2aa">Items Subtotal:</p>
-                        <p id="right2ab">$0.00</p>
+                        <p id="right2ab">$<span id="total">0.00</span></p>
                     </div>
                     <div id="right201">
                         <p id="right202">Tax Total:</p>
-                        <p id="right203">$0.00</p>
+                        <p id="right203">$<span id="tax">0.00</span></p>
                     </div>
                     <div id="right204">
                         <p id="right205">Shipping:</p>
@@ -279,11 +349,11 @@
                     <hr id="right207">
                     <div id="right3">
                         <p id="right3a">Order Total:</p>
-                        <p id="right3b">$0.00</p>
+                        <p id="right3b">$<span id="total">0.00</span></p>
                     </div>
                     <div id="right4">
                         <p id="right4a"> <img src="https://img.shop.com/Image/resources/images/cashback-icon.svg" alt="$" style="width: 13px;"> Cashback earned on this order:</p>
-                        <p id="right4b">$0.29</p>
+                        <p id="right4b">$1.29</p>
                     </div>
                     <hr id="right5">
                     <br>
@@ -300,13 +370,134 @@
         <div class="dis">
             <p>© 1997-2023 Market America, Inc. or its affiliates. All other designated trademarks, copyrights, and
                 brands are the property of their respective owners. (famos-p11)</p>
-            <p>Privacy Policy | Terms of Use | Advertising Disclosure | Return Policy | Shipping Information</p>
+                <p>Privacy Policy | Terms of Use | Advertising Disclosure | Return Policy | Shipping Information</p>
+            </div>
+            <div>
+                <a href="">
+                    <img src="https://www.aiowork.com/wp-content/uploads/2021/06/digicert-ssl-certificate.png" alt="">
+                </a>
+            </div>
         </div>
-        <div>
-            <a href="">
-                <img src="https://www.aiowork.com/wp-content/uploads/2021/06/digicert-ssl-certificate.png" alt="">
-            </a>
-        </div>
-    </div>
-</body>
-</html>
+    </body>
+    </html>
+    <script>
+        var address=JSON.parse(localStorage.getItem("address-form"))
+        function Display(brr){
+            // event.preventDefault();
+            console.log("hi")
+            brr.map(function(ele){
+                var div1=document.createElement("div")
+                div1.setAttribute("id","box12")
+                var img=document.createElement("img")
+                img.setAttribute("src",ele.img);
+                var img1=document.createElement("img")
+                img1.setAttribute("src","https://img.shop.com/Image/resources/images/cashback-icon.svg");
+                
+                var name= document.createElement("h3")
+                name.textContent=ele.name;
+                
+                var price=document.createElement("p")
+                price.setAttribute("id","price111")
+                price.innerText="$"+ele.price;
+                
+                var ratio=document.createElement("p")
+                ratio.innerText= ele.ratio;
+                
+                var category=document.createElement("p")
+                category.textContent= "Category: "+ele.category;
+                
+                var sold=document.createElement("p")
+                sold.textContent= "Sold By:"+ele.soldBy;
+                
+                var div2=document.createElement("div")
+                div2.setAttribute("id","boxx12") 
+                var div3=document.createElement("div")
+                div3.setAttribute("id","boxxx12") 
+                var div4=document.createElement("div")
+                div4.setAttribute("id","boxxxx12") 
+
+                div4.append(img1,ratio)
+                div3.append(name,price)
+                div2.append(div3,div4,category,sold)
+                div1.append(img,div2)
+                document.getElementById("productinfo").append(div1)
+                
+                var total= brr.reduce(function(elem1,elem2){
+                    return elem1+Number(elem2.price);
+                },0)
+                localStorage.setItem("total-payment",total)
+                document.querySelector("#total").textContent=total
+                document.querySelector("#tax").textContent=total*0.15
+                document.querySelector("#right2ab>#total").textContent=total-total*0.15
+                document.querySelector("#right3b>#total").textContent=total
+            })
+        }
+    showaddress(address)
+    function showaddress(obj){
+        console.log("hi",address)
+        var div1=document.createElement("div")
+        div1.setAttribute("id","boxx")
+        // var input=document.createElement("input")
+        // input.setAttribute("type","radio")
+        var name=document.createElement("p")
+        name.innerText=obj.firstname1+" "+obj.lastname1;
+        var address= document.createElement("p")
+        address.textContent=obj.address1;
+        var city=document.createElement("p")
+        city.innerText=obj.city1;
+        var state=document.createElement("p")
+        state.innerText= obj.state1;
+        var zip=document.createElement("p")
+        zip.textContent= obj.zip1;
+        var phone=document.createElement("p")
+        phone.textContent= obj.phone1;
+        var div2=document.createElement("div")
+        div2.setAttribute("id","boxx1")
+        div2.append(name,address,city,state,phone)
+        div1.append(div2)
+        document.getElementById("box4").append(div1)
+    }
+    var arr=[
+        { 
+            img: "https://img.shop.com/Image/240000/243300/243380/products/1942133519.jpg?plain&size=750x750", 
+        name: "Motives® X Amber Essential Collection", 
+        soldBy: "Sold by Motives® Cosmetics", 
+        strikedprice: "80.00", 
+        price: "40.00", 
+        ratio: "+ up to $3.00 / 8% Cashback", 
+        shipping: "Free shipping with $50.00 orders", 
+        category:"makeup" 
+    }, 
+    { 
+            img: "https://img.shop.com/Image/240000/243300/243380/products/536366005.jpg?plain&size=750x750",
+            name: "Motives® Liquid Powder Mineral Foundation with SPF 15", 
+            soldBy: "Sold by Motives® Cosmetics", 
+            strikedprice: "35.00", 
+            price: "15.00", 
+            ratio: "+  $2.40 / 3% Cashback", 
+            shipping: "Free shipping with $40.00 orders", 
+            category:"makeup" 
+        }, 
+        { 
+            img: "https://img.shop.com/Image/240000/243300/243380/products/1932836050.jpg?plain&size=750x750", 
+            name: "Sold by Motives® Cosmetics", 
+            soldBy: " Sold by Cutter & Buck", 
+            strikedprice: "35.00", 
+            price: "30.00", 
+            ratio: "+ up to $1.22 / 2% Cashback", 
+            shipping: "Free shipping with $40.00 orders", 
+            category:"makeup" 
+        }, 
+        { 
+            img:"https://img.shop.com/Image/240000/243300/243380/products/1943082936.jpg?plain&size=750x750", 
+            name: "Motives® LALA Pop of LALA Pressed Pigment Palette", 
+            soldBy: " Sold by Motives® Cosmetics", 
+            strikedprice: "45.00", 
+            price: "40.00", 
+            ratio: "+ up to $1.22 / 2% Cashback", 
+            shipping: "Free shipping with $40.00 orders", 
+            category:"makeup" 
+        }
+    ];
+    Display(arr)
+</script>

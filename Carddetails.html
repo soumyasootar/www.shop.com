@@ -109,7 +109,7 @@ body {
 .month select,
 .year select {
     opacity: .7;
-    color: #86939e;
+    /* color: #86939e; */
     padding: 8px;
 }
 .card-number,.card-name {
@@ -291,22 +291,19 @@ body {
 </body>
 </html>
 <script>
-    // document.querySelector(".proceed-btn").addEventListener("click",Payment)
-    // var x=JSON.parse(localStorage.getItem("price"))
-    // console.log(x);
-    // document.querySelector("h1").textContent="Total Price = ₹"+x;
-    // function Payment(){
-    //     event.preventDefault();
-    //     var name = document.querySelector(".card-name").value;
-    //     var number = document.querySelector(".card-number").value;
-    //     var month = document.querySelector(".month>select").value;
-    //     var year = document.querySelector(".year>select").value;
-    //     var CVV = document.querySelector("#cvv-text").value;
-    //     console.log(number=="1234567890",month=="march",year=="2023",CVV=="520")
-    //     if(number=="1234567890"&&month=="march"&&year=="2023"&&CVV=="520"){
-    //      window.open("./OTP.html" , "_blank")
-    //     }else{
-    //         alert("Enter correct Card Information")
-    //     }  
-    // }
+    document.querySelector(".proceed-btn").addEventListener("click",Payment)
+    function Payment(){
+        event.preventDefault();
+        var name = document.querySelector(".card-name").value;
+        var number = document.querySelector(".card-number").value;
+        var month = document.querySelector(".month>select").value;
+        var year = document.querySelector(".year>select").value;
+        var CVV = document.querySelector("#cvv-text").value;
+        console.log(number=="1234567890",month=="march",year=="2023",CVV=="520")
+        if(number=="1234567890"&&month=="march"&&year=="2023"&&CVV=="520"){
+         window.open("./OTP.html" , "_self")
+        }else{
+            alert("Enter correct Card Information")
+        }  
+    }
 </script>

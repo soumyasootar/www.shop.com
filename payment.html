@@ -300,6 +300,24 @@
     width: 150px;
     
 }
+ /* adress box  */
+        
+ #boxx{
+            display: flex;
+            border: 1px dashed #545871;
+            gap: 10px;
+            padding: 10px;
+            font-style: italic;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        #boxx1 p{
+            margin: 2px;
+        }
+        #boxx1{
+            display: flex;
+            flex-direction: column;
+        }
 
     </style>
 </head>
@@ -407,11 +425,11 @@
                     <br>
                     <div id="right2a">
                         <p id="right2aa">Items Subtotal:</p>
-                        <p id="right2ab">$0.00</p>
+                        <p id="right2ab">$<span id="total">0.00</span></p>
                     </div>
                     <div id="right201">
                         <p id="right202">Tax Total:</p>
-                        <p id="right203">$0.00</p>
+                        <p id="right203">$<span id="tax">0.00</span></p>
                     </div>
                     <div id="right204">
                         <p id="right205">Shipping:</p>
@@ -424,7 +442,7 @@
                     <hr id="right207">
                     <div id="right3">
                         <p id="right3a">Order Total:</p>
-                        <p id="right3b">$0.00</p>
+                        <p id="right3b">$<span id="total">0.00</span></p>
                     </div>
                     <div id="right4">
                         <p id="right4a"> <img src="https://img.shop.com/Image/resources/images/cashback-icon.svg" alt="$" style="width: 13px;"> Cashback earned on this order:</p>
@@ -443,7 +461,7 @@
                     </div>
                     <div id="right7">
                         <a id="right7a" href="./shipping.html" style="color: black;"> <img src="https://cdn.pixabay.com/photo/2012/04/10/23/37/arrow-27066_960_720.png" alt="$" style="width: 13px;"> Shipping</a>
-                        <a href="./payment.html"> <button id="right7b">Place Order</button></a>
+                        <a href="./Carddetails.html"> <button id="right7b" onclick="">Place Order</button></a>
                     </div>
                     <p id="right8">Let us know how we are doing <a href="#" style="color: #545871;">Send Feedback</a>
                 </div>
@@ -465,3 +483,37 @@
     </div>
 </body>
 </html>
+<script>
+     var address=JSON.parse(localStorage.getItem("address-form"))
+     total=JSON.parse(localStorage.getItem("total-payment"))||0
+    document.querySelector("#total").textContent=total
+    document.querySelector("#right3b>#total").textContent=total
+    document.querySelector("#right2ab>#total").textContent=total-total*0.15
+    document.querySelector("#tax").textContent=total*0.15
+    document.querySelector("#right3b>#total").textContent=total
+    showaddress(address)
+    function showaddress(obj){
+        console.log("hi",address)
+        var div1=document.createElement("div")
+        div1.setAttribute("id","boxx")
+        // var input=document.createElement("input")
+        // input.setAttribute("type","radio")
+        var name=document.createElement("p")
+        name.innerText=obj.firstname1+" "+obj.lastname1;
+        var address= document.createElement("p")
+        address.textContent=obj.address1;
+        var city=document.createElement("p")
+        city.innerText=obj.city1;
+        var state=document.createElement("p")
+        state.innerText= obj.state1;
+        var zip=document.createElement("p")
+        zip.textContent= obj.zip1;
+        var phone=document.createElement("p")
+        phone.textContent= obj.phone1;
+        var div2=document.createElement("div")
+        div2.setAttribute("id","boxx1")
+        div2.append(name,address,city,state,phone)
+        div1.append(div2)
+        document.getElementById("bottom-left").append(div1)
+    }
+</script>
