@@ -22,10 +22,12 @@
 .child {
     display: flex;
     justify-content: space-between;
-    width: 30%;
+    width: 650px;
     margin-left: -140px;
     font-family: Roboto,Arial,Helvetica,sans-serif;
-    
+    /* border: 2px solid black; */
+    font-size: 15px;
+    margin-left: 10px;
 }
 .child > a{
     color: #202340;
@@ -58,7 +60,9 @@ select{
     padding: 13px 15px;
     border: none;
     border-radius: 50px;
+   
 }
+
 select + input{
     padding: 8px 80px;
     width: 40%;
@@ -496,7 +500,7 @@ margin-top: 15px;
 .first-div{
     display: flex;
     justify-content: space-between;
-    width: 95%;
+    width: 100%;
     margin: auto;
     padding: 10px 0px 10px 0px;
     background:  #545871;
@@ -505,18 +509,19 @@ margin-top: 15px;
 }
 .emailbox{
     padding: 2px 80px 2px 0px;
+    border: none;
 }
 .first-div label, span{
     font-size: .8125rem;
     font-family: Roboto,Arial,Helvetica,sans-serif;
     font-weight: 700;
 }
-.first-div button{
+.first-div > div:last-child > button{
     border-radius: 15px;
     padding: 5px 10px;
     border: none;
 }
-.first-div button:hover{
+.first-div > div:last-child > button:hover{
     background:  #202340;
     color: white;
 }
@@ -535,7 +540,7 @@ margin-top: 15px;
 .second-div {
     display: flex;
     justify-content: space-between;
-    width:94.5%;
+    width:100%;
     margin: auto;
     font-size: .75rem;
     font-weight: 700;
@@ -565,11 +570,10 @@ margin-top: 15px;
 
 .footer-copyright-section{
     width: 95%;
-    margin: auto;
+    margin-left: 10px;
     font-size: .6875rem;
     padding-top: 10px;
     line-height: 20px;
-    
 }
 .links{
     text-decoration: underline;
@@ -717,4 +721,37 @@ margin-top: 15px;
     background: white;
     padding-left: 15px;
     margin: 20px 0px -25px 38px;
+  }
+
+  .product-one-img-two{
+    width:50%;
+  }
+  .product-one-img-two img{
+    width:100%;
+  }
+
+  .product-card-one p:last-child{
+    color: #3c88ac;
+  }
+  .product-card-one p:last-child:hover{
+    color: rgb(0,168,202);
+  }
+
+  .product-card p:last-child{
+    color: #3c88ac;
+  }
+  .product-card p:last-child:hover{
+    color: rgb(0,168,202);
+  }
+
+  #sign-up{
+    border-radius:0px; 
+    padding:2px;
+     margin-left:-10px;
+      background:white;
+      border:none;
+  }
+  #sign-up:hover{
+    background:  #202340;
+    color: white;
   }
