@@ -36,6 +36,17 @@ var food = [
     },
     {
         img:
+            "https://img.shop.com/Image/260000/263100/263143/products/1883458081.jpg?plain&size=400x400",
+            name: "only organic toddler lactose free",
+            soldBy: "Sold by AllGourmetFood",
+        strikedprice: "35.00",
+        price: "30.00",
+        ratio: "+ up to $1.22 / 2% Cashback",
+        shipping: "Free shipping with $40.00 orders",
+        category:"baby"
+    },
+    {
+        img:
             "https://img.shop.com/Image/240000/247900/247927/products/1882272930.jpg?plain&size=400x400",
             name: "Shopping Annuity® Brand Premium Green Tea",
             soldBy: " Sold by Shopping Annuity Necessities",
@@ -67,6 +78,18 @@ var food = [
         shipping: "Free shipping with $40.00 orders",
         category:"beverage"
     },
+    {
+        img:
+            "https://img.shop.com/Image/270000/273400/273475/products/1934207851.jpg?plain&size=400x400",
+        name: "Om Mushrooms KHCH00386194 240 g Mushroom Hot Chocolate Blend",
+        soldBy: " Sold by AllGourmetFood",
+        strikedprice: "89",
+        price: "53",
+        ratio: "+  $0.63 / 6% Cashback",
+        shipping: "Free shipping with $40.00 orders",
+        category:"beverage"
+    },
+   
 
     {
         img:
@@ -103,6 +126,18 @@ var food = [
     },
     {
         img:
+            "https://img.shop.com/Image/210000/217300/217306/products/1908433664.jpg?plain&size=400x400",
+        name: "Brewferm Buckriders Wicked Wheat Homebrew Craft Beer Mix",
+        soldBy: " Sold by AllGourmetFood",
+        strikedprice: "89",
+        price: "53",
+        ratio: "+  $0.63 / 6% Cashback",
+        shipping: "Free shipping with $40.00 orders",
+        category:"beer"
+    },
+   
+    {
+        img:
             "https://img.shop.com/Image/270000/273400/273475/products/1912765219.jpg?plain&size=400x400",
             name: "Smartsweets KHRM00370054 1.8 oz Sour Melon Candy Gummy",
             soldBy: " Sold by AllGourmetFood",
@@ -127,6 +162,17 @@ var food = [
         img:
             "https://img.shop.com/Image/270000/273400/273475/products/1958395754.jpg?plain&size=400x400",
             name: "Office Snax OFX00671 Fancy Candy Mix - 5 lbs",
+        soldBy: " Sold by AllGourmetFood",
+        strikedprice: "57",
+        price: "25",
+        ratio: "+  $0.63 / 3% Cashback",
+        shipping: "Free shipping with $40.00 orders",
+        category:"candy"
+    },
+    {
+        img:
+            "https://img.shop.com/Image/270000/273400/273475/products/1787136795.jpg?plain&size=400x400",
+            name: "US Toy CA324 24 Piece Pop Rocks Candy, Fruit Punch",
         soldBy: " Sold by AllGourmetFood",
         strikedprice: "57",
         price: "25",
@@ -162,6 +208,17 @@ var food = [
         img:
             "https://img.shop.com/Image/270000/273400/273475/products/1926930395.jpg?plain&size=400x400",
             name: "Back To Nature KHRM00375033 6 oz Grab Go Classic Creme Cookie",
+            soldBy: "Sold by AllGourmetFood",
+        strikedprice: "60",
+        price: "45",
+        ratio: "+ up to $1.22 / 2% Cashback",
+        shipping: "Free shipping with $40.00 orders",
+        category:"bread"
+    },
+    {
+        img:
+            "https://img.shop.com/Image/270000/273400/273475/products/1934207278.jpg?plain&size=400x400",
+            name: "Southern Gourmet KHRM00604522 7.5 oz Outrageous Key Lime Pie Filling",
             soldBy: "Sold by AllGourmetFood",
         strikedprice: "60",
         price: "45",

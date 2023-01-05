@@ -169,6 +169,17 @@ var pet = [
         shipping: "Free shipping with $40.00 orders",
         category:"animals"
     },
+    {
+        img:
+            "https://img.shop.com/Image/250000/250000/250006/products/1923714140.jpg?plain&size=400x400",
+        name: "Multi Dura Chew Plus Nyla Multi-Dura Chew Plus Spr",
+        soldBy: "Sold by  UnbeatableSale",
+        strikedprice: "60",
+        price: "45",
+        ratio: "+ up to $1.22 / 2% Cashback",
+        shipping: "Free shipping with $40.00 orders",
+        category:"animals"
+    },
    
 
 ];

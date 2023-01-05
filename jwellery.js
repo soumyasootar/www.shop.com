@@ -36,6 +36,17 @@ var jwl = [
     },
     {
         img:
+            "https://img.shop.com/Image/280000/282000/282022/products/1887245885.jpg?plain&size=750x750",
+            name: "KELLY - Bezel Bracelet (FINAL SALE)",
+            soldBy: "Sold by Layered",
+        strikedprice: "35.00",
+        price: "30.00",
+        ratio: "+ up to $1.22 / 2% Cashback",
+        shipping: "Free shipping with $40.00 orders",
+        category:"bracelets"
+    },
+    {
+        img:
             "https://img.shop.com/Image/280000/282000/282022/products/1881405772.jpg?plain&size=750x750",
             name: "SOPHIE - Pave CZ Hoop Earrings",
         soldBy: " Sold by Layered",
@@ -67,6 +78,18 @@ var jwl = [
         shipping: "Free shipping with $40.00 orders",
         category:"earings"
     },
+    {
+        img:
+            "https://img.shop.com/Image/280000/282000/282022/products/1954593896.jpg?plain&size=750x750",
+        name: "EVA – Convertible Link Drop Earrings",
+        soldBy: " Sold by Layered",
+        strikedprice: "89",
+        price: "53",
+        ratio: "+  $0.63 / 6% Cashback",
+        shipping: "Free shipping with $40.00 orders",
+        category:"earings"
+    },
+
 
     {
         img:
@@ -94,6 +117,17 @@ var jwl = [
         img:
             "https://img.shop.com/Image/280000/282000/282022/products/1887245953.jpg?plain&size=750x750",
             name: "NAOMI - Sleek Trillion Ring (FINAL SALE)",
+        soldBy: " Sold by  Layered",
+        strikedprice: "177",
+        price: "39",
+        ratio: "+  $0.63 / 3% Cashback",
+        shipping: "Free shipping with $40.00 orders",
+        category:"rings"
+    },
+    {
+        img:
+            "https://img.shop.com/Image/280000/282000/282022/products/1881405527.jpg?plain&size=750x750",
+            name: "ANGIE - Eternity Band",
         soldBy: " Sold by  Layered",
         strikedprice: "177",
         price: "39",
@@ -136,6 +170,17 @@ var jwl = [
     },
     {
         img:
+            "https://img.shop.com/Image/280000/282000/282022/products/1932866534.jpg?plain&size=750x750",
+        name: "SELENA – Pave Cuban Link Chain",
+        soldBy: " Sold by Layered",
+        strikedprice: "57",
+        price: "25",
+        ratio: "+  $0.63 / 3% Cashback",
+        shipping: "Free shipping with $40.00 orders",
+        category:"necklaces"
+    },
+    {
+        img:
             "https://img.shop.com/Image/250000/251800/251872/products/1931115365.jpg?plain&size=400x400",
             name: "Fitbit Versa 2 Black Elastomer Strap Touchscreen Smart Watch 39mm",
         soldBy: "Sold by Macy's",
@@ -162,6 +207,17 @@ var jwl = [
         img:
             "https://img.shop.com/Image/240000/243400/243406/products/1791352381.jpg?plain&size=400x400",
         name: "Fitbit Versa 2 Black Elastomer Strap Touchscreen Smart Watch 39mm",
+        soldBy: "Sold by Macy's",
+        strikedprice: "60",
+        price: "45",
+        ratio: "+ up to $1.22 / 2% Cashback",
+        shipping: "Free shipping with $40.00 orders",
+        category:"watch"
+    },
+    {
+        img:
+            "https://img.shop.com/Image/270000/274900/274929/products/1897354119.jpg?plain&size=400x400",
+        name: "Citizen Promaster Diver Mens Silver Tone Stainless Steel Bracelet Watch Bn0191-55l, One Size",
         soldBy: "Sold by Macy's",
         strikedprice: "60",
         price: "45",

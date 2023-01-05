@@ -36,6 +36,17 @@ var home = [
     },
     {
         img:
+            "https://img.shop.com/Image/240000/243400/243406/products/1823606830.jpg?plain&size=400x400",
+            name: "Roselli Trading Company Suites 3-Pc. Bath Accessory Set Bedding",
+            soldBy: "Sold by Sim Supply",
+        strikedprice: "35.00",
+        price: "30.00",
+        ratio: "+ up to $1.22 / 2% Cashback",
+        shipping: "Free shipping with $40.00 orders",
+        category:"bathroom"
+    },
+    {
+        img:
             "https://img.shop.com/Image/240000/243400/243406/products/1899425202.jpg?plain&size=400x400",
             name: "Riztex Usa Vivian Rae Quilt, Queen",
             soldBy: " Sold by  Bed Bath Fashions",
@@ -60,6 +71,17 @@ var home = [
         img:
             "https://img.shop.com/Image/290000/292000/292069/products/1949582478.jpg?plain&size=400x400",
         name: "Bibb Home 2000 Count 6-Piece Rayon from Rayon from Bamboo Sheet Set",
+        soldBy: " Sold by  Bed Bath Fashions",
+        strikedprice: "89",
+        price: "53",
+        ratio: "+  $0.63 / 6% Cashback",
+        shipping: "Free shipping with $40.00 orders",
+        category:"bed"
+    },
+    {
+        img:
+            "https://img.shop.com/Image/260000/262600/262642/products/1854539461.jpg?plain&size=400x400",
+        name: "Madison Park Breanna 6 Piece Cotton Daybed Cover Set Daybed",
         soldBy: " Sold by  Bed Bath Fashions",
         strikedprice: "89",
         price: "53",
@@ -103,6 +125,17 @@ var home = [
     },
     {
         img:
+            "https://img.shop.com/Image/280000/284400/284458/products/1865309680.jpg?plain&size=400x400",
+            name: "Costway Set of 4 Style Metal Dining Side Chair Wood Seat Stackable Bistro Cafe",
+            soldBy: " Sold by UnbeatableSale",
+        strikedprice: "177",
+        price: "39",
+        ratio: "+  $0.63 / 3% Cashback",
+        shipping: "Free shipping with $40.00 orders",
+        category:"furniture"
+    },
+    {
+        img:
             "https://img.shop.com/Image/270000/273400/273475/products/1738504360.jpg?plain&size=400x400",
             name: "Jonathan Green & Sons 802135 5 m Weed & Feed Lawn Fertilizer",
             soldBy: " Sold by AllGourmetFood",
@@ -127,6 +160,17 @@ var home = [
         img:
             "https://img.shop.com/Image/270000/273400/273475/products/1712347052.jpg?plain&size=400x400",
         name: "Western 61644 2 lb. Wood Chip Smoking Apple",
+        soldBy: " Sold by AllGourmetFood",
+        strikedprice: "57",
+        price: "25",
+        ratio: "+  $0.63 / 3% Cashback",
+        shipping: "Free shipping with $40.00 orders",
+        category:"garden"
+    },
+    {
+        img:
+            "https://img.shop.com/Image/270000/273400/273475/products/1712340166.jpg?plain&size=400x400",
+        name: "Seeds BG18000 Seeds Pumpkin Seeds Raw - 1x5LB",
         soldBy: " Sold by AllGourmetFood",
         strikedprice: "57",
         price: "25",
@@ -169,6 +213,18 @@ var home = [
         shipping: "Free shipping with $40.00 orders",
         category:"kitchen"
     },
+    {
+        img:
+            "https://img.shop.com/Image/250000/251800/251872/products/1881260590.jpg?plain&size=400x400",
+        name: "Lorren Home Trends LH524 16 Piece Stoneware Scroll Dinnerware Set, White",
+        soldBy: "Sold by AllGourmetFood",
+        strikedprice: "60",
+        price: "45",
+        ratio: "+ up to $1.22 / 2% Cashback",
+        shipping: "Free shipping with $40.00 orders",
+        category:"kitchen"
+    },
+   
    
 
 ];

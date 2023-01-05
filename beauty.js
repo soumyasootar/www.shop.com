@@ -391,6 +391,17 @@ var beauty = [
         shipping: "Free shipping with $40.00 orders",
         category:"cosmetics"
     },
+    {
+        img:
+            "https://img.shop.com/Image/280000/287300/287312/products/1901848302.jpg?plain&size=400x400",
+        name: "Motives® Essential Eye 7-Piece Brush Set",
+        soldBy: " Sold by Motives® Cosmetics",
+        strikedprice: "57",
+        price: "25",
+        ratio: "+  $0.63 / 3% Cashback",
+        shipping: "Free shipping with $40.00 orders",
+        category:"cosmetics"
+    },
 
 ];
 displayfun(beauty);

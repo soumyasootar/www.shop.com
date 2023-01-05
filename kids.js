@@ -36,6 +36,17 @@ var kids = [
     },
     {
         img:
+            "https://img.shop.com/Image/210000/217300/217306/products/1935074635.jpg?plain&size=400x400",
+            name: "Babyjoy Lightweight Baby Stroller Aluminium Frame w/ Net for Travel Blue",
+            soldBy: "Sold by COSTWAY",
+        strikedprice: "35.00",
+        price: "30.00",
+        ratio: "+ up to $1.22 / 2% Cashback",
+        shipping: "Free shipping with $40.00 orders",
+        category:"stroller"
+    },
+    {
+        img:
             "https://img.shop.com/Image/210000/217300/217306/products/1920410659.jpg?plain&size=400x400",
         name: "Hudson Baby Size 3-6M 5-Pack Little Monkey Long Sleeve Bodysuits In Grey",
         soldBy: " Sold by buybuyBABY",
@@ -60,6 +71,17 @@ var kids = [
         img:
             "https://img.shop.com/Image/260000/268500/268595/products/1925300009.jpg?plain&size=400x400",
         name: "Toddler Boy Carter's Carter's Swim Trunks, Toddler Boy's, Size: 5T, Blue",
+        soldBy: " Sold by Ranch & Home",
+        strikedprice: "89",
+        price: "53",
+        ratio: "+  $0.63 / 6% Cashback",
+        shipping: "Free shipping with $40.00 orders",
+        category:"clothes"
+    },
+    {
+        img:
+            "https://img.shop.com/Image/250000/254500/254570/products/1912586825.jpg?plain&size=400x400",
+        name: "Harry Potter Infant Baby Boys Hogwarts Muggle Solemnly Swear Onesie 3 Pack",
         soldBy: " Sold by Ranch & Home",
         strikedprice: "89",
         price: "53",
@@ -103,6 +125,17 @@ var kids = [
     },
     {
         img:
+            "https://img.shop.com/Image/210000/217300/217306/products/1928461484.jpg?plain&size=400x400",
+            name: "Mam 9-Piece Baby Essentials Gift Set In Blue",
+            soldBy: "  Sold by Bmbrooks",
+        strikedprice: "177",
+        price: "39",
+        ratio: "+  $0.63 / 3% Cashback",
+        shipping: "Free shipping with $40.00 orders",
+        category:"feeding"
+    },
+    {
+        img:
             "https://img.shop.com/Image/250000/250100/250199/products/1519464953.jpg?plain&size=750x750",
             name: "DNA Miracles® Natural Diaper Cream",
             soldBy: "Sold by DNA Miracles®",
@@ -127,6 +160,17 @@ var kids = [
         img:
             "https://img.shop.com/Image/250000/250100/250199/products/904054724.jpg?plain&size=750x750",
         name: "DNA Miracles® Natural Bathtime Box",
+        soldBy: "Sold by DNA Miracles®",
+        strikedprice: "57",
+        price: "25",
+        ratio: "+  $0.63 / 3% Cashback",
+        shipping: "Free shipping with $40.00 orders",
+        category:"diaper"
+    },
+    {
+        img:
+            "https://img.shop.com/Image/210000/217300/217306/products/1907827634.jpg?plain&size=400x400",
+        name: "Smart Bottoms Aqua Floral On-The-Go Wet Bag In Blue",
         soldBy: "Sold by DNA Miracles®",
         strikedprice: "57",
         price: "25",
@@ -169,7 +213,17 @@ var kids = [
         shipping: "Free shipping with $40.00 orders",
         category:"babybath"
     },
-   
+    {
+        img:
+            "https://img.shop.com/Image/210000/217300/217306/products/1908529392.jpg?plain&size=400x400",
+        name: "Disney Minnie Mouse Inflatable Bath Tub",
+        soldBy: "Sold by Your Store Online",
+        strikedprice: "60",
+        price: "45",
+        ratio: "+ up to $1.22 / 2% Cashback",
+        shipping: "Free shipping with $40.00 orders",
+        category:"babybath"
+    },
 
 ];
 displayfun(kids);
