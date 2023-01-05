@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SignIn Page</title>
-    <link rel="stylesheet" href="signin.css">
+    <title>Create An Account</title>
+    <link rel="stylesheet" href="newaccount.css">
 </head>
 <body>
     <header>
@@ -100,41 +100,84 @@
 </div>
     </div>
     </header>
-    <main>
-        <section>
-        
-        <div id="parent">
-        <h1>Sign in</h1>
-        
-        <div id="mainchild">
-        <div>
-        <form action="">
-        <label for="email">Email address:</label><br>
-        <input type="text" id="email" name="email" placeholder="yourname@example.com"><br>
-        <label for="password">Password:</label><br>
-        <input type="password" id="password" name="password"placeholder="yourname@example.com"><br>
-        <a href=""> <u>Forgot your password?</u> </a><br>
-        <button class="proceed">Sign In</button>
-         </form>
-        </div>
-        <div>
-            <h2>Don't have an account?</h2>
-            <p>With a SHOP.COM account, you can enjoy the following benefits: up to 50% <span><img src="https://img.shop.com/Image/resources/images/cashback-icon.svg" alt="dollor" height="16" ></span> Cashback on eligible purchases, redeem discount coupons, order status and history, saved payment options and addresses, exclusive emails and more.</p>
-            <button>Create your new account</button>
-        </div>
-    </div>
-    </div>
+<main>
+    <section>
+        <div id="box" >                    
+                    <h1>Create an account</h1>
+            <form action=""> 
+                <div id="details">
+                    <p>* Indicates required field</p>
+                <div>    
+                    <label for="fname">First Name*</label><br>
+                <div>   
+                    
+                    <input type="text" id="fname" name="fname" class="account" placeholder="First name here"><br>
+                </div>
+                    <label for="lname">Last Name*</label><br>
+                <div>
+                    
+                    <input type="text" id="lname" name="lname" class="account" placeholder="Last name here"><br>
+                </div>   
+                    <label for="email">Email Address*</label><br>
+                    <input type="email" id="email" name="email" class="account" placeholder="yourname@example.com"><br>
+                <div>
+                    <label for="password">Password (At least 7 characters)</label> <br> 
+                    <input type="password" id="password" name="password" class="account" placeholder="Please enter aminimum of 7 characters"><br>
+                </div>
+                <div>   
+                    <label for="password">Confirm Password*</label> <br>    
+                    <input type="password" id="confpassword" name="confpassword" class="account" placeholder="Please reenter your password"><br>
+                </div>
+                <div> 
+                </div> 
+                    <h2>Text Message (SMS) Alerts: (Optional)</h2>
+                <div> 
+                    <input type="checkbox" id="messagealert" name="messagealert" class="account" >
+                    <label for="messagealert">Do you want to sign up for Shopper alerts from SHOP.COM? (Message and data rates may apply.)</label>
+                    
+                </div>
+                <div> 
+                    <label for="mobnumber">Mobile Phone</label>
+                    <input type="number" id="mobnumber" name="mobnumber" class="account" placeholder="  Please enter your 10 digit phone number(i.e 999 999 9999)>
+                </div>
+                </div>  
+                <div>  
+                    <label for="mobnumber">Were you referred by a friend? <br><span>Enter their email address (Optional)</span></label>
+                    <input type="email" id="email1" name="email1" class="account">
+                
+                </div> 
+                    <p> Your Shop Consultant is SHOP.COM</p>
+                </div>     
+             
+                    <h2>Email deals: (Optional)</h2>
+                <div>  
+                     <input type="checkbox" id="notification" name="notification" class="account" > 
+                     <label for="notification">Do you want to sign up for sweet email offers and discounts from SHOP.COM?</label>
+                     <input type="checkbox" id="notification1" name="notification1" class="account" >
+                     <label for="notification1">Do you want to sign up for sweet email offers and discounts from MarketAmerica.com and its brands?</label>
+                </div>  
+
+                     <p>Also, please confirm you are not a robot:</p>
+
+                 <div>  
+                    <iframe src="view-source:https://www.google.com/recaptcha/api2/anchor?ar=1&k=6LepVBMTAAAAAFtsPYeaiBKBa5ssaUt2ravj8LwJ&co=aHR0cHM6Ly93d3cuc2hvcC5jb206NDQz&hl=en&v=5qcenVbrhOy8zihcc2aHOWD4&size=normal&cb=g8qn9n8gn2su" frameborder="0"></iframe>
+                </div> 
+
+                <div>  
+                    <button>Create your new account</button>
+                     <p>By creating an account, you are agreeing to our Terms of Service and Privacy Policy.</p>
+                </div>
+
+            </form>
+        </div>   
     </section>
-    </main>
+</main>
+
     <footer>
         <div class="footer-section">
 
             <div class="first-div">
-               <div>
-                   <label for="fname">Get Email Deals & Earn Cashback</label>
-                   <input type="email" id="fname" name="fname" class="emailbox" placeholder="enter email address...">
-               </div> 
-               <div>
+               
                    <span>Link To This Page & Tell All Your Friends!</span>
                    <button>
                        Copy Link
