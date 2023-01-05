@@ -34,6 +34,10 @@
     margin: 6px;
 }
 
+.product-detail{
+    width: 250px;
+}
+
 #cart-product-img{
     width: 100px;
 }
@@ -70,7 +74,7 @@
 }
 
 #save-for-later{
-    width: 160px;
+    width: 100px;
     height: 30px;
     border-radius: 15px;
     font-weight: bold;
@@ -79,7 +83,7 @@
 }
 
 #remove-cart{
-    width: 100px;
+    width: 65px;
     height: 30px;
     border-radius: 15px;
     font-weight: bold;

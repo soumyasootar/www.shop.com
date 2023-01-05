@@ -249,9 +249,11 @@ let mensData = [
 
 
 showdata(mensData);
+subTotalValue(mensData);
 
 
 function showdata(mensData){
+    // document.querySelector(".cart-product").innerText = "";
     mensData.map(function(elem){
         let div = document.createElement("div");
         div.innerHTML = 
@@ -273,10 +275,30 @@ function showdata(mensData){
         <button id="remove-cart">Remove</button>
         </div>`
 
+        document.getElementById("remove-cart").addEventListener("click",function(){
+            removeFromCart(elem);
+        });
+
         document.querySelector(".cart-product").append(div);
     })
 }
 
+
+
+function removeFromCart(elem){
+    let removedProduct = mensData.splice(elem,1);
+    // here update the localstorage
+    showdata(mensData);
+    console.log("clicked")
+}
+
+
+function subTotalValue(mensData){
+    let subtotal = mensData.reduce(function(a,b){
+        return a.price + b.price;
+    })
+    document.getElementById("totalprice").innerText = subtotal;
+}
 
 
         
