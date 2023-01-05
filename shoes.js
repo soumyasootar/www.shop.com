@@ -375,6 +375,9 @@ function displayfun(q) {
         //sd.setAttribute("class", "details");
         var atc = document.createElement("button");
         atc.innerText = "Add to Cart";
+        atc.addEventListener("click",function(){
+            cart(elem,i);
+        });
 
        // atc.setAttribute("class", "addtocart");
         bdiv.append(sd, atc)
@@ -386,6 +389,16 @@ function displayfun(q) {
     });
 }
 
+var cartArr=JSON.parse(localStorage.getItem("cart-list")) || [];
+var count=localStorage.getItem("cartcount") || 0;
+
+function cart(elem,i){
+    cartArr.push(elem);
+    count++;
+    document.querySelector(".cart-count").innerText=count;
+    localStorage.setItem("cart-list",JSON.stringify(cartArr));
+    localStorage.setItem("cartcount",count);
+}
 
 function changed(){
     var catt = document.querySelector("#filter").value;
@@ -402,6 +415,36 @@ function changed(){
    
 }
 
+document.querySelector("#filtermen").addEventListener("click",filterfun1);
+document.querySelector("#filterwomen").addEventListener("click",filterfun2);
+document.querySelector("#filterkids").addEventListener("click",filterfun3);
+
+function filterfun1(){
+    let q=shoe.filter(function(item){
+        if(item.category=="Men"){
+            return item;
+        }
+    });
+    displayfun(q);
+}
+
+function filterfun2(){
+    let q=shoe.filter(function(item){
+        if(item.category=="women"){
+            return item;
+        }
+    });
+    displayfun(q);
+}
+
+function filterfun3(){
+    let q=shoe.filter(function(item){
+        if(item.category=="Kids"){
+            return item;
+        }
+    });
+    displayfun(q);
+}
 /* <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= --> */
 function onClickMenu(){
     document.getElementById("menu").classList.toggle("icon");
