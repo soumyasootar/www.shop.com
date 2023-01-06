@@ -11,9 +11,13 @@ function signin(e) {
       console.log("print");
       localStorage.setItem("currentUser", JSON.stringify(old_data[i]));
       alert("Sign In Successfull");
+
       window.Location.href = "./index.html";
       return;
     }
   }
-  alert("Email or Password Does Not Match");
+        alert("Email or Password Does Not Match");
+        document.getElementById("email").value="";
+        document.getElementById("password").value="";
+      
 }
