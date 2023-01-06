@@ -295,10 +295,15 @@ function removeFromCart(elem){
 
 function subTotalValue(mensData){
     let subtotal = mensData.reduce(function(a,b){
-        return a.price + b.price;
-    })
-    document.getElementById("totalprice").innerText = subtotal;
+        return a + b.price;
+    },0)
+    // console.log(subtotal)
+    document.getElementById("totalprice").innerText = `$ ${subtotal}`;
 }
+
+// var total=obj1.reduce(function(ele,ele1){
+//     return Number(ele)+(Number(ele1.price)*Number(ele1.qty));
+//   },0);
 
 
         
