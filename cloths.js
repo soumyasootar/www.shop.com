@@ -470,8 +470,16 @@ function displayfun(q) {
         var bdiv = document.createElement("div");
         bdiv.setAttribute("class", "buttons")
 
-        var sd = document.createElement("button");
-        sd.innerText = "See Details";
+        var sd = document.createElement("div");
+        
+        var anchor=document.createElement("a");
+        anchor.innerText="See Details";
+        sd.append(anchor);
+        anchor.setAttribute("href","details.html");
+        anchor.setAttribute("class","anch");
+        anchor.addEventListener("click",function(){
+            det(elem);
+        });
         //sd.setAttribute("class", "details"); 
         var atc = document.createElement("button");
         atc.innerText = "Add to Cart";
@@ -489,7 +497,15 @@ function displayfun(q) {
     });
 }
 
+function det(elem){
+    var arr=[];
+    arr.push(elem);
+    localStorage.setItem("detail",JSON.stringify(arr));
+//location.replace("details.html");
+}
+
 var cartArr = JSON.parse(localStorage.getItem("cart-list")) || [];
+
 var count = localStorage.getItem("cartcount") || 0;
 document.querySelector(".cart-count").innerText = count;
 
@@ -497,6 +513,7 @@ function cart(elem, i) {
     cartArr.push(elem);
     count++;
     document.querySelector(".cart-count").innerText = count;
+    document.querySelector(".cart-count").innerText = cartArr.length;
     localStorage.setItem("cart-list", JSON.stringify(cartArr));
     localStorage.setItem("cartcount", count);
 }
@@ -556,6 +573,10 @@ function onClickMenu() {
     document.getElementById("nav").classList.toggle("change");
 }
 
+/* <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= --> */
+document.querySelector(".logo").addEventListener("click",function(){
+    window.open("project.html");
+});
 
 
 

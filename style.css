@@ -35,6 +35,7 @@
 
 .logo > img{
     width: 100%;
+    cursor: pointer;
 }
 .humbergar-div , .logo{
     margin-left: 25px;

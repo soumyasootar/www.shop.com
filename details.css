@@ -1,5 +1,6 @@
-/* <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= --> */
-
+#main{
+    display: flex;
+}
 .top-section {
     font-family: Arial;
     margin-top: -22px;
@@ -51,7 +52,6 @@
 
 .logo>img {
     width: 100%;
-    cursor: pointer;
 }
 
 .humbergar-div,
@@ -266,186 +266,89 @@ a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
+   
 }
 
 /* <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= --> */
-body {
+*{
+    font-family: Roboto,Arial,Helvetica,sans-serif;
+}
+h1{
     color: #202340;
-    font-family: Roboto, Arial, Helvetica, sans-serif;
-    font-size: 1rem;
+    font-family: Roboto,Arial,Helvetica,sans-serif;
+    font-size: 2rem;
     font-style: normal;
-    font-weight: 400
-}
-
-#product-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-    gap: 15px;
-
-}
-
-#product-container>div>img {
-    width: 100%;
-}
-
-#product-container>div {
-    text-align: left;
-    padding: 30px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-
-#product-container>div>p {
-    text-align: left;
-}
-
-.sold {
-    color: #202340;
-    font-size: .75rem;
-    line-height: .9rem;
-}
-
-.oprice {
-    color: #202340;
-    font-size: .9375rem;
     font-weight: 700;
-    margin-left: 5px;
-}
-
-.buttons {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    padding-top: 20px;
-    margin-top: 20px;
-    margin-bottom: -15px;
-}
-
-.buttons>div {
-    background-color: #fff;
-    border: 1px solid #414467;
-    color: #202340;
-    border-radius: 40px;
-    font-weight: 700;
-    padding: 9.1px;
-    height: 24px;
-    line-height: 25px;
-    font-size: 14px;
-    cursor: pointer;
-    
-}
-
-.buttons>button:last-child {
-    background-color: #414467;
-    border: none;
-    padding: 9.1px;
-    color: white;
-    border-radius: 50px;
-    font-weight: 700;
-    height: 40px;
-    line-height: 18px;
-    font-size: 14px;
-    cursor: pointer;
-}
-
-.buttons>button:last-child:hover {
-    background-color: #202340;
-}
-
-.buttons>div:hover {
-    background-color: #202340;
-}
-.anch:hover{
-    color: white;
-}
-
-#product-container>div:hover {
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    cursor: pointer;
-}
-#match{
-    display: flex;
-}
-#match>select{
-    border: none;
-    font-size: 14px;
-    color: #202340;
 }
 #main{
-    display: flex;
-    gap: 5px;
-}
-#sidebar{
-    text-align: left;
-    padding: 30px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-#i{
-    width: 15px;
-    height: 15px;
-}
-#sidebar~p>input{
-    height: 20px;
-    width: 20px;
-    margin-top: -2px;
+    margin-top: 50px;
+    width: 100%;
 
 }
-#sidebar>p{
-    display: flex;
-  margin-right: 50px;
-  margin-top: -10px;
+#image>img{
+    width: 70%;
 }
-.sideitem{
-    font-size: 12px;
-   padding-top: 10px;
-}
-.bcolor{
-    font-size: 18px;
-    font-weight: 700;
+#price{
+    font-size: 33px;
     color: #202340;
+    font-weight: 700;
 }
-#filter>option{
+.lprice{
+    color: #202340;
+    font-weight: 700;
+}
+.center{
+    display: flex;
+    align-items: center;
+    background-color: #f0f1f7;
+    padding: 30px;
+    height: 20px;
+}
+.center>span{
+    font-size: 18px;
+    color: #202340;
+    margin-left: 5px;
+}
+.bit{
+    height: 150px;
+    width: 150px;
+}
+#cart{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    text-align: center;
+    padding: 30px;
+}
+#cart>p{
+    text-align: left;
+    margin-top: -20px;
     color: #202340;
     font-weight: 600;
 }
-
-#feedback{
-    background-color: #f0f1f7;
+#cart>button{
+    text-align: center;
+    margin: auto;
+    background-color: #414467;
+    border: none;
     padding: 10px;
-  
-}
-#feedback>input{
-    border-radius: 2px;
-    resize: vertical;
-    margin: 15px auto;
-    padding: 7px;
-    height: 150px;
-    width: 90%;
-    border-radius: 10px;
-}
-#feedback>button{
-    background-color: #fff;
-    border: 1px solid #414467;
-    color: #202340;
+    color: white;
     border-radius: 50px;
     font-weight: 700;
-    padding: 9.1px;
-    height: 40px;
+    height: 50px;
     line-height: 18px;
-    font-size: 14px;
+    font-size: 16px;
     cursor: pointer;
+    width: 250px;
+    
 }
-#feedback>button:hover{
-    color: #fff;
+#dt{
+    margin-right: 50px;
+}
+#cart>button:hover{
     background-color: #202340;
 }
-#filtermen,#filterwomen, #filterkids,#filter{
-    cursor: pointer;
-}
-#filtergame,#filterhome, #filterapparel,#filterfootball,#filtershorts,#filterbath,#filterbath1,#filterbath2,#filterbath3,#filterbath4,#filter{ 
-    cursor: pointer; 
-}
+
 /* <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= --> */
+
 .first-div{
     /* border: 2px solid black; */
     display: flex;
@@ -560,68 +463,4 @@ body {
 .footer-img-section{
     margin-top: -10px;
    
-}
-@media only screen and (min-width: 641px) and (max-width: 1007px) {
-    #product-container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto;
-        gap: 15px;
-    
-    }
-    .child{
-        display: grid;
-        grid-template-columns: repeat(5,1fr);
-        gap: 10px;
-        margin-left: -200px;
-        
-    }
-    #form{
-        display: flex;
-        margin-left: 60px;
-    }
-    .second-logo>img{
-        height: 30px;
-        margin-right: 40px;
-    }
-    .child-second-section{
-        margin-right: 70px;
-    }
-    .cart-section{
-        padding: 5px;
-        
-    }
-}  
-
-/* small screens */
-@media only screen and (min-width: 0px) and (max-width: 640px) {
-    #product-container {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: auto;
-        gap: 15px;
-    
-    }
-    .child{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        gap: 1px;
-        margin-left: -200px;
-        
-    }
-    #form{
-        display: flex;
-        margin-left: 60px;
-    }
-    .second-logo>img{
-        height: 30px;
-        margin-right: 40px;
-    }
-    .child-second-section{
-        margin-right: 70px;
-    }
-    .cart-section{
-        padding: 5px;
-        
-    }
 }
