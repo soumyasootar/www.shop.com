@@ -149,7 +149,7 @@ button:hover{
     <form class="credit-card">
         <img src="https://media.tenor.com/40bYuytgRvYAAAAj/hedge-pay-hpay.gif" alt="">
         <p style="font-size:xx-large ;">Your Order Has Been Placed</p>
-        <button>Continue Shopping</button>
+        <button onclick="func2()"><a href="/orderpage/orderpage.html" style="text-decoration: none;color: white;">Continue Shopping</a> </button>
       </form>
       <!-- footer  -->
           <div id="cart-footer" style="bottom: 0;">
@@ -163,9 +163,12 @@ button:hover{
                 <img src="https://www.aiowork.com/wp-content/uploads/2021/06/digicert-ssl-certificate.png" alt="">
             </a>
         </div>
-    </div>
-      
+    </div>  
 </body>
 </html>
 <script>
+    localStorage.setItem("order-list1",JSON.stringify(JSON.parse(localStorage.getItem("cart-list"))) )
+    function func2(){
+        window.open("/orderpage/orderpage.html","_self")
+    }
 </script>

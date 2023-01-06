@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shop.com</title>
-
+    <title>CartPage</title>
+    <link rel="icon" type="image/x-icon" href="https://img.shop.com/Image/resources/logos/shop-s-logo-icon.svg">
     <script src="https://kit.fontawesome.com/f276ecc4c7.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="cartpage.css">
@@ -250,15 +250,15 @@
 
             <div class="child-second-section">
 
-                <a href="#" class="signIn"><i class="fa-solid fa-circle-user "
+                <a href="#" class="signIn" id="signin-page1"><i class="fa-solid fa-circle-user "
                         style="font-size: 1.7rem ;padding-right: 7px;"></i> <span id="user-name">Sign In </span> </a>
 
 
-                <a href="#" class="signIn"><i class="fa-solid fa-rotate-left"
+                <a href="/orderpage/orderpage.html" class="signIn" id="order-page1"><i class="fa-solid fa-rotate-left"
                         style="font-size: 1.7rem ;padding-right: 7px;"></i>Orders</a>
 
 
-                <a href="#" class="signIn"><i class="fa-solid fa-cart-shopping"
+                <a href="#" class="signIn" id="cart-page1"><i class="fa-solid fa-cart-shopping"
                         style="font-size: 1.7rem ;padding-right: 7px;"></i>Cart</a>
 
             </div>
@@ -338,7 +338,7 @@
                     <input type="submit" id="apply-promocode">
                 </form>
             </div>
-            <button id="proceed">proceed to chekout</button>
+            <button id="proceed" onclick="proceedtopayment()">proceed to chekout</button>
             <div class="checkout">
                 <p>Or checkout with</p>
                 <button id="paypal"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/PayPal_logo.svg/2560px-PayPal_logo.svg.png" alt=""></button>

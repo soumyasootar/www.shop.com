@@ -297,8 +297,9 @@
 </body>
 </html>
 <script>
+    // localStorage.setItem("total-payment",JSON.parse(localStorage.getItem("local-subtotal")))
     var address=JSON.parse(localStorage.getItem("address-form"))
-    total=JSON.parse(localStorage.getItem("total-payment"))||0
+    total=JSON.parse(localStorage.getItem("local-subtotal"))||0
     document.querySelector("#total").textContent=total
     document.querySelector("#right3b>#total").textContent=total
     showaddress(address)
