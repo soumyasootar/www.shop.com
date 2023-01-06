@@ -360,11 +360,7 @@ function showdata(mensData){
             
         });
         
-        
     })
-
-    
-
 
 }
 
@@ -375,6 +371,12 @@ function removeItem(elem,index){
     cart_product_arr.splice(index,1);   
     localStorage.setItem("cart-list",JSON.stringify(cart_product_arr)); 
     showdata(cart_product_arr);
+    subtotal = cart_product_arr.reduce(function(elem1,curr){
+        localStorage.setItem("local-subtotal",JSON.stringify((Number(elem1) + (Number(curr.price)*Number(curr.quantity)))))
+        return Number(elem1) + (Number(curr.price)*Number(curr.quantity));
+    },0)
+    console.log(JSON.parse(localStorage.getItem("local-subtotal")));
+    document.getElementById("totalprice").innerText = `$${subtotal}`;
 }
 
 let subtotal = 0;
