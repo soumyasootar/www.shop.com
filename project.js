@@ -49,3 +49,9 @@ function funsearch(){
 // cart logo
 var count = localStorage.getItem("cartcount") || 0;
 document.querySelector(".cart-count").innerText = count;
+
+//function image
+
+document.querySelector("#poster").addEventListener("click",function(){
+        window.open("clothe.html","_self");
+});

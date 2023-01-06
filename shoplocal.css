@@ -465,7 +465,14 @@ font-weight:10;
 }
 
 
-
+.parent-of-all-img > .child-div img{
+    transform: scale(1);
+    transition: .3s ease-in-out;
+  }
+   .child-div:hover img {
+    transform: scale(1.1);
+  }
+  
 
 
 /* Footer */

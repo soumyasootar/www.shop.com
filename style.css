@@ -334,6 +334,7 @@ color: #202340;
    .poster > img{
     width: 100%;
     margin-top: -20px;
+    cursor: pointer;
    }
    .second-brands-div{
     display: flex;
