@@ -1,3 +1,5 @@
+// const { stringify } = require("querystring");
+
 let mensData = [ 
     { 
         image_url: 
@@ -246,17 +248,71 @@ let mensData = [
 ]
 
 
+var temp_arr=[
+    { 
+        img: "https://img.shop.com/Image/240000/243300/243380/products/1942133519.jpg?plain&size=750x750", 
+    name: "Motives® X Amber Essential Collection", 
+    soldBy: "Sold by Motives® Cosmetics", 
+    strikedprice: "80.00", 
+    price: "40.00", 
+    ratio: "+ up to $3.00 / 8% Cashback", 
+    shipping: "Free shipping with $50.00 orders", 
+    category:"makeup" 
+}, 
+{ 
+        img: "https://img.shop.com/Image/240000/243300/243380/products/536366005.jpg?plain&size=750x750",
+        name: "Motives® Liquid Powder Mineral Foundation with SPF 15", 
+        soldBy: "Sold by Motives® Cosmetics", 
+        strikedprice: "35.00", 
+        price: "15.00", 
+        ratio: "+  $2.40 / 3% Cashback", 
+        shipping: "Free shipping with $40.00 orders", 
+        category:"makeup" 
+    }, 
+    { 
+        img: "https://img.shop.com/Image/240000/243300/243380/products/1932836050.jpg?plain&size=750x750", 
+        name: "Sold by Motives® Cosmetics", 
+        soldBy: " Sold by Cutter & Buck", 
+        strikedprice: "35.00", 
+        price: "30.00", 
+        ratio: "+ up to $1.22 / 2% Cashback", 
+        shipping: "Free shipping with $40.00 orders", 
+        category:"makeup" 
+    }, 
+    { 
+        img:"https://img.shop.com/Image/240000/243300/243380/products/1943082936.jpg?plain&size=750x750", 
+        name: "Motives® LALA Pop of LALA Pressed Pigment Palette", 
+        soldBy: " Sold by Motives® Cosmetics", 
+        strikedprice: "45.00", 
+        price: "40.00", 
+        ratio: "+ up to $1.22 / 2% Cashback", 
+        shipping: "Free shipping with $40.00 orders", 
+        category:"makeup" 
+    }
+];
+
+localStorage.setItem("cart-list",JSON.stringify(temp_arr));
 
 
-showdata(mensData);
+
+let cart_product_arr = JSON.parse(localStorage.getItem("cart-list"));
+
+showdata(cart_product_arr);
+total_price()
+
+
 
 
 function showdata(mensData){
-    mensData.map(function(elem){
+    document.querySelector(".cart-product").textContent = "";
+    mensData.map(function(elem,index){
+        elem.quantity = 1;
+        localStorage.setItem("cart-list",JSON.stringify(cart_product_arr)); 
         let div = document.createElement("div");
+        div.setAttribute("class","product-box")
         div.innerHTML = 
         `<div id="sub-cart-product">
-        <div id="cart-product-imgdiv"><img id="cart-product-img" src=${elem.image_url} alt="product"></div>
+        <div id="cart-product-imgdiv"><img id="cart-product-img" src=${elem.img} alt="product"></div>
         <div class="product-detail">
             <h3 class="product-name">${elem.name}</h3>
             <h3 class="price">$ ${elem.price}</h3>
@@ -266,15 +322,80 @@ function showdata(mensData){
                 <p>Cashback</p>
             </div>
             <p>Item#: 190777978227</p>
-            <p>Color: Navy</p>
-            <p>Size: 3X Large</p>
+            <p>Sold by: ${elem.soldBy}</p>
+            <p>Category: ${elem.category}</p>
+            <div id="quantity-div">
+                <p>Quantity</p>
+                <select name="quantity" id="quantity-count">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
         </div>
         <button id="save-for-later">Save for Later</button>
-        <button id="remove-cart">Remove</button>
+        <button id="remove-cart" >Remove</button>
         </div>`
 
         document.querySelector(".cart-product").append(div);
+
+ 
+
+        div.querySelector("#remove-cart").addEventListener("click",function(){
+            // console.log("entered");
+            removeItem(elem,index);
+            
+        });
+
+        div.querySelector("#quantity-count").addEventListener("change",function(){
+            // console.log("entered");
+            quantity(elem,index,div)
+            
+        });
+        
+        
     })
+
+    
+
+
+}
+
+
+
+function removeItem(elem,index){
+    event.preventDefault();
+    cart_product_arr.splice(index,1);   
+    localStorage.setItem("cart-list",JSON.stringify(cart_product_arr)); 
+    showdata(cart_product_arr);
+}
+
+let subtotal = 0;
+function total_price(){
+    let subtotal = cart_product_arr.reduce(function(elem,curr){
+        return elem + Number(curr.price);
+    },0)
+    document.getElementById("totalprice").innerText = `$${subtotal}`;
+}
+
+function quantity(elem,index,div){
+    let quantity = div.querySelector("#quantity-count").value;
+    elem.quantity = Number(quantity);
+    console.log(elem)
+    localStorage.setItem("cart-list",JSON.stringify(cart_product_arr)); 
+    subtotal = cart_product_arr.reduce(function(elem1,curr){
+        localStorage.setItem("local-subtotal",JSON.stringify((Number(elem1) + (Number(curr.price)*Number(curr.quantity)))))
+        return Number(elem1) + (Number(curr.price)*Number(curr.quantity));
+    },0)
+    console.log(JSON.parse(localStorage.getItem("local-subtotal")));
+    document.getElementById("totalprice").innerText = `$${subtotal}`;
 }
 
 
