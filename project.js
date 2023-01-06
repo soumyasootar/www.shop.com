@@ -55,3 +55,12 @@ document.querySelector(".cart-count").innerText = count;
 document.querySelector("#poster").addEventListener("click",function(){
         window.open("clothe.html","_self");
 });
+
+//feedback
+document.getElementById("submitfeedback").addEventListener("click",function(){
+    let val=document.getElementById("feedbacktext").value;
+    if(val.length>0){
+        alert("Thank you for your valuable feedback!!!");
+    }
+});
+

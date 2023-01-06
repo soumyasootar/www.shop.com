@@ -459,3 +459,11 @@ function funsearch(){
         document.querySelector("#search").value="";
     }
 }
+
+//feedback
+document.getElementById("submitfeedback").addEventListener("click",function(){
+    let val=document.getElementById("feedbacktext").value;
+    if(val.length>0){
+        alert("Thank you for your valuable feedback!!!");
+    }
+});

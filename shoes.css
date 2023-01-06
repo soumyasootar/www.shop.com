@@ -419,11 +419,13 @@ body {
     border-radius: 2px;
     resize: vertical;
     margin: 15px auto;
-    padding: 7px;
+    padding:7px;
     height: 150px;
     width: 90%;
     border-radius: 10px;
+   
 }
+
 #feedback>button{
     background-color: #fff;
     border: 1px solid #414467;

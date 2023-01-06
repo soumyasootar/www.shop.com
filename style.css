@@ -791,3 +791,9 @@ margin-top: 15px;
     height: 45px;
     width: 45px;
   }
+
+  /* functionality */
+
+  .cloth{
+    cursor: pointer;
+  }
