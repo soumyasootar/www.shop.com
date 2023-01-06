@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop.com</title>
+   
+    <script src="https://kit.fontawesome.com/f276ecc4c7.js" crossorigin="anonymous"></script>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+        }
+     .nav-first-section , .nav-second-section{
+        display: flex;
+        justify-content: space-between;
+        /* border: 2px solid black; */
+        align-items: center;
+       
+     }
+     .nav-first-section{
+        padding-top: 15px;
+        margin-bottom: 10px;
+     }
+     .nav-second-section{
+     padding-bottom: 15px;
+     }
+     *{
+        font-family: Arial;
+     }
+    .child {
+        display: flex;
+        justify-content: space-between;
+        width: 30%;
+        margin-left: -140px;
+        /* border: 2px solid black; */
+        font-family: Roboto,Arial,Helvetica,sans-serif;
+        
+    }
+    .child > a{
+        color: #202340;
+    }
+    .logo{
+        width: 10%;
+    }
+    .logo > img{
+        width: 100%;
+    }
+    .humbergar-div , .logo{
+        margin-left: 25px;
+    }
+    .humbergar-div{
+        width: 150px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        /* border: 2px solid black; */
+    }
+    .child-second-section , .second-logo{
+        margin-right: 25px;
+        /* border: 2px solid rgb(255, 2, 2); */
+    }
+    .child-second-section{
+        width: 22%;
+        display: flex;
+        justify-content: space-between;
+    }
+    select{
+        padding: 13px 15px;
+        border: none;
+        border-radius: 50px;
+    }
+    select + input{
+        padding: 8px 80px;
+        width: 40%;
+        border: none;
+        border-left: 1px solid black;
+    }
+   
+    form{
+        border: 1px solid black;
+        border-radius: 50px;
+        overflow: hidden;
+        width: 100%;
+        background: white;
+    }
+    .input-section{
+        /* position: relative; */
+        width: 40%;
+        /* border: 2px solid black; */
+        margin-left: -150px;
+    }
+    button{
+        border: 2px solid black;
+        width: 50px;
+        position: absolute;
+        left:57.2%;
+        top:20px;
+        border: none;
+        border-radius:0px 50px 50px 0px;
+        padding: 4px;
+        text-align: center;
+        background-color:#202340;
+    }
+    button>img{
+        width: 75%;
+    }
+    .navbar{
+        background: #f0f1f7;
+        position: sticky;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+
+    }
+    .child-second-section > a, .humbergar-div > a{
+        color: #202340;
+    }
+   
+   
+    .second-logo > img{
+        color: white;
+    }
+    a:hover{
+       color: #00a8ca
+    }
+    button > img{
+        color: white;
+    }
+    
+    .top-section{
+        background-color: #202340;
+        color: white;text-align: center;padding: 5px;
+
+    }
+
+    </style>
+</head>
+<body>
+    <div class="top-section">
+        <p>1st time customers save 25% on SHOP.COM exclusive brands using code FIRST250FF. Max $25 discount. Terms Apply. <span style="text-decoration: underline;">Click Here</span> </p>
+    </div>
+    <div class="navbar">
+
+        <div class="nav-first-section">
+<!-- ............................logo-div(1st-part-of-navbar)......................................................... -->
+    <div class="logo">
+        <img src="https://img.shop.com/Image/resources/logos/shop-logo-us.svg" alt="">
+    </div>
+
+<!-- ............................Input-section-div(1st-part-of-navbar)......................................................... -->
+<div class="input-section">
+    <form action="" id="form">
+    <select id="NamesSorting">
+        <option value="empty">All Departments</option>
+        <option value="Auto">Auto</option>
+        <option value="Beauty">Beauty</option>
+        <option value="Books">Books</option>
+        <option value="Business">Business</option>
+        <option value="Cameras">Cameras</option>
+        <option value="Clothes">Clothes</option>
+        </select>
+        <input type="text" placeholder="Search SHOP.COM...">
+        <button>
+           <img src="https://img.shop.com/Image/resources/images/icon-search-24px.svg" alt="" >
+        </button>
+    </form>
+    </div>
+    <!-- ............................LayeredSale div img section(1st-part-of-navbar)......................................................... -->
+
+    <div class="second-logo">
+        <img src="https://img.shop.com/Image/header2013/layered-us-eng-105972-blk-friday-banner-300x50-11670940062489.jpg" alt="">
+    </div>
+
+    </div>  
+<!-- ................................1st part of navbar ended here -->
+
+<!-- ................................2ndst part of navbar started from here............................ -->
+    <div class="nav-second-section">
+
+    <div class="humbergar-div">
+        <a href="#" class="humbergar-icon"><i class="fa-solid fa-bars" style="font-size: 1.7rem ; width: 35px; " ></i>Category</a>
+       
+    </div>
+
+    <div class="child">
+        <a href="">Exclusive Brands</a>
+        <a href="">Stores</a>
+        <a href="">Deals</a>
+        <a href="">Departments</a>
+        <a href="">ShopBuddy</a>
+    </div>
+
+    <div class="child-second-section">
+    
+        <a href="#" class="signIn"><i class="fa-solid fa-circle-user " style="font-size: 1.7rem ;padding-right: 7px;"></i> <span id = "user-name">Sign In </span> </a>
+    
+
+        <a href="#" class="signIn"><i class="fa-solid fa-rotate-left" style="font-size: 1.7rem ;padding-right: 7px;" ></i>Orders</a>
+    
+
+        <a href="#" class="signIn"><i class="fa-solid fa-cart-shopping" style="font-size: 1.7rem ;padding-right: 7px;" ></i>Cart</a>
+    
+    </div>
+</div>
+
+
+
+    </div>
+</body>
+</html>
+<script>
+
+</script>
