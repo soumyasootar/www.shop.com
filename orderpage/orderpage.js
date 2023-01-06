@@ -1,5 +1,3 @@
-// const { stringify } = require("querystring");
-
 let mensData = [ 
     { 
         image_url: 
@@ -325,23 +323,10 @@ function showdata(mensData){
             <p>Sold by: ${elem.soldBy}</p>
             <p>Category: ${elem.category}</p>
             <div id="quantity-div">
-                <p>Quantity</p>
-                <select name="quantity" id="quantity-count">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                </select>
+                <p>Quantity : ${elem.quantity}</p>
             </div>
         </div>
-        <button id="save-for-later">Save for Later</button>
-        <button id="remove-cart" >Remove</button>
+        
         </div>`
 
         document.querySelector(".cart-product").append(div);
@@ -399,7 +384,3 @@ function quantity(elem,index,div){
     console.log(JSON.parse(localStorage.getItem("local-subtotal")));
     document.getElementById("totalprice").innerText = `$${subtotal}`;
 }
-
-
-
-        
