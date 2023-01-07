@@ -1,54 +1,63 @@
 /* Navbar CSS*/
+
 *{
     margin: 0;
     padding: 0;
     text-decoration: none;
+    font-family: Arial;
 }
 .nav-first-section , .nav-second-section{
 display: flex;
 justify-content: space-between;
 align-items: center;
-
+width: 100%;
 }
 .nav-first-section{
-padding-top: 15px;
-margin-bottom: 10px;
+/* padding-top: 15px;
+margin-bottom: 10px; */
+padding-top: 1%;
+margin-bottom: 1%;
 }
 .nav-second-section{
-padding-bottom: 15px;
+padding-bottom: 1%;
 }
-*{
-font-family: Arial;
-}
+
 .child {
 display: flex;
 justify-content: space-between;
-width: 30%;
-margin-left: -140px;
+/* width: 650px; */
+width: 43%;
+/* margin-left: -140px; */
+/* margin-left: -140%; */
 font-family: Roboto,Arial,Helvetica,sans-serif;
-
+/* border: 2px solid red; */
+font-size: 15px;
+margin-left: 1%;
 }
 .child > a{
 color: #202340;
 }
-.logo{
-width: 10%;
-}
+
 .logo > img{
 width: 100%;
 }
 .humbergar-div , .logo{
-margin-left: 25px;
+margin-left: 1.5%;
 }
 .humbergar-div{
-width: 150px;
+/* width: 150px; */
+width: 50%;
 display: flex;
 justify-content: space-between;
 align-items: center;
 text-align: center;
 }
-.child-second-section , .second-logo{
+.child-second-section {
 margin-right: 25px;
+}
+.second-logo{
+margin-right: 1.5%;
+text-align: right;
 }
 .child-second-section{
 width: 22%;
@@ -56,58 +65,73 @@ display: flex;
 justify-content: space-between;
 }
 select{
-padding: 13px 15px;
+/* padding: 13px 15px;
 border: none;
 border-radius: 50px;
-}
-select + input{
-padding: 8px 80px;
-width: 40%;
+border: 2px solid black; */
+
+padding: 2% 2%;
 border: none;
-border-left: 1px solid black;
+border-radius: 50px;
+/* border: 2px solid black; */
 }
 
-form1{
+
+
+#form1{
 border: 1px solid black;
 border-radius: 50px;
 overflow: hidden;
-width: 100%;
+width: 85%;
 background: white;
 }
 .input-section{
-width: 40%;
+width: 20%;
 margin-left: -150px;
 }
 
 .btn1{
-width: 50px;
-height: 54px;
-position: absolute;
-left:54.95%;
-top:14px;
-border: none;
-border-radius:0px 50px 50px 0px;
-padding: 4px;
-text-align: center;
-background-color:#202340;
+    background-color: #202340; 
+    /* height: 45px; 
+    width: 30px; 
+    padding-right: 15px; 
+    border-radius: 0px 50px 50px 0px; */
+
+    height: 103%; 
+    width: 10%; 
+    padding-right: 1%; 
+    border-radius: 0px 50% 50% 0%;
 }
 .btn1>img{
-width: 45%;
+width: 75%;
 }
 .navbar{
 background: #f0f1f7;
 position: sticky;
 top: 0;
 box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-/* border: 2px solid black; */
+margin-top: -0.5%;
+z-index: 10;
 }
 .child-second-section > a, .humbergar-div > a{
 color: #202340;
 }
+.nav-bar-input{
+font-size: 15px;
+width: 100%;
+height: 20px;
+border: none;
 
+}
+
+.nav-bar-input:focus {
+outline: none;
+font-size: 15px;
+}
 
 .second-logo > img{
 color: white;
+
 }
 a:hover{
 color: #00a8ca
@@ -119,8 +143,9 @@ color: white;
 .top-section{
 background-color: #202340;
 color: white;text-align: center;padding: 7px;
-font-size: 16px;
+font-size: 100%;
 font-family: Roboto, Arial, Helvetica, sans-serif;
+padding-bottom: 0.8%;
 }
 .child-second-section p {
 border: 1px solid black;
@@ -135,15 +160,17 @@ position: relative;
 .cart-section a{
 color: #202340;
 }
+
+
+
 .cart-count{
 position: absolute;
-top: -15px;
-left: 5px;
+top: -55%;
+left: 5%;
 background-color: white;
 font-size:15px;
 }
 /* .....................................HAMBERGER-MENU........................................... */
-
 
 #menu{
 width: 30px;
@@ -204,11 +231,11 @@ background-color: #202340;
 }
 
 .icon #bar1{
-transform: translateY(4px) rotate(-45deg);
+transform: translateY(5px) rotate(-45deg);
 }
 
 .icon #bar3{
-transform: translateY(-6px) rotate(45deg);
+transform: translateY(-5px) rotate(45deg);
 }
 
 .icon #bar2{
@@ -240,6 +267,8 @@ justify-content: center;
     width: 100%;
 }
 }
+
+
                                         /*              Navbar CSS Ended                  */
   
                                         /*                 Main CSS started               */ 
@@ -248,6 +277,7 @@ main{
     height: 410px;
     font-weight: 400;
     width: 100%;
+
 }
 h1{
     font-size: 28px;
@@ -272,6 +302,8 @@ input{
     height: 26px;
     border: 1px solid black;
 }
+
+
 ::placeholder{
     font-size: 14px;
     font-weight: 400;
@@ -306,6 +338,7 @@ label{
 #mainchild> div:nth-child(1){
     width: 350px;
 margin-top:15px;
+
 }
 #mainchild> div:nth-child(2){
     width: 340px;
@@ -320,7 +353,6 @@ margin:15px 0px 0px 15px;
 
 }
 
-
 #mainchild > div:nth-child(2) > a{
     width: 70%;
     height: 40px;
@@ -331,9 +363,14 @@ margin:15px 0px 0px 15px;
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
-    background-color: #202340;
-    color: white;
+   
+    color:black;
 
+}
+#mainchild > div:nth-child(2) > a:hover{
+  color: white;
+   
+    background-color: #202340;
 }
 .proceed{
     width: 95%;
@@ -346,6 +383,10 @@ margin:15px 0px 0px 15px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
     margin: 20px 3px 0px 0px ;
+    cursor: pointer;
+}
+#signinform{
+ 
 }
 
 

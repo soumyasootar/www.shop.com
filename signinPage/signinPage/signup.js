@@ -22,6 +22,7 @@ function signup(e) {
   old_data.push(data);
   localStorage.setItem("signupData", JSON.stringify(old_data));
   alert("Signup Successfull");
+  
   window.location.href="./signin.html"
 }
 
