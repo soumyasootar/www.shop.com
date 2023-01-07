@@ -8,7 +8,9 @@ function proceedtopayment(){
 function showdata(mensData){
     document.querySelector(".cart-product").textContent = "";
     mensData.map(function(elem,index){
-        elem.quantity = 1;
+        if(!(elem.quantity!=null&&elem.quantity>1)){
+            elem.quantity = 1;
+        }
         localStorage.setItem("cart-list",JSON.stringify(cart_product_arr)); 
         let div = document.createElement("div");
         div.setAttribute("class","product-box")
@@ -80,7 +82,6 @@ function removeItem(elem,index){
     console.log(JSON.parse(localStorage.getItem("local-subtotal")));
     document.getElementById("totalprice").innerText = `$${subtotal}`;
 }
-
 let subtotal = JSON.parse(localStorage.getItem("local-subtotal"))||0;
 function total_price(){
     let subtotal = cart_product_arr.reduce(function(elem,curr){

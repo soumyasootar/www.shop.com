@@ -200,7 +200,7 @@
         <div class="nav-first-section">
             <!-- ............................logo-div(1st-part-of-navbar)......................................................... -->
             <div class="logo">
-                <img src="https://img.shop.com/Image/resources/logos/shop-logo-us.svg" alt="">
+                <img src="https://img.shop.com/Image/resources/logos/shop-logo-us.svg" alt="" onclick="fun1()">
             </div>
 
             <!-- ............................Input-section-div(1st-part-of-navbar)......................................................... -->
@@ -250,7 +250,7 @@
 
             <div class="child-second-section">
 
-                <a href="#" class="signIn" id="signin-page1"><i class="fa-solid fa-circle-user "
+                <a href="/signinPage/signin.html" class="signIn" id="signin-page1"><i class="fa-solid fa-circle-user "
                         style="font-size: 1.7rem ;padding-right: 7px;"></i> <span id="user-name">Sign In </span> </a>
 
 
@@ -258,7 +258,7 @@
                         style="font-size: 1.7rem ;padding-right: 7px;"></i>Orders</a>
 
 
-                <a href="#" class="signIn" id="cart-page1"><i class="fa-solid fa-cart-shopping"
+                <a href="/cartpage/cartpage.html" class="signIn" id="cart-page1"><i class="fa-solid fa-cart-shopping"
                         style="font-size: 1.7rem ;padding-right: 7px;"></i>Cart</a>
 
             </div>
@@ -354,5 +354,7 @@
 </html>
 <script src="sampleproductarr.js"></script>
 <script>
-
+function fun1(){
+        window.open("../project.html","_self")
+    }
 </script>

@@ -245,6 +245,7 @@
 #bottom-right2 {
     font-size: medium;
     margin-top: 15px;
+    margin-bottom: 5px;
 }
 
 #bottom-right3 {
@@ -324,8 +325,8 @@
 <body>
     <!-- TOP SECTION  -->
     <div id="navbar">
-        <img src="https://img.shop.com/Image/resources/logos/shop-logo-us.svg" alt="shop.com logo">
-        <a href="./project.html">Continue Shopping</a>
+        <img src="https://img.shop.com/Image/resources/logos/shop-logo-us.svg" alt="shop.com logo" onclick="fun1()">
+        <a href="./project.html" onclick="fun1()">Continue Shopping</a>
     </div>
     <!-- MIDDLE SECTON  -->
     <div id="mid">
@@ -488,8 +489,9 @@
         var promo=document.getElementById("bottom-right3a").value;
         console.log(promo)
         if(promo==="masai30"){
-            document.querySelector("#bottom-right2").innerText="Coupon applied";
+            document.querySelector("#bottom-right2").innerText="Coupon applied 🥲🥲🥲";
             document.querySelector("#bottom-right2").style.color="green";
+            document.querySelector("#bottom-right2").style.fontWeight="600"
             var discount=JSON.parse(localStorage.getItem("local-subtotal"))
             var off=discount*0.3
             discount=discount-off
@@ -503,6 +505,11 @@
             document.querySelector("#tax").textContent=total*0.15
             document.querySelector("#right3b>#total").textContent=total
             document.querySelector("#right206>#discount").textContent=off
+        }
+        else{
+            document.querySelector("#bottom-right2").innerText="Wrong Coupon applied 🤣🤣🤣";
+            document.querySelector("#bottom-right2").style.color="red";
+            document.querySelector("#bottom-right2").style.fontWeight="600"
         }
     })
      var address=JSON.parse(localStorage.getItem("address-form"))
@@ -537,5 +544,8 @@
         div2.append(name,address,city,state,phone)
         div1.append(div2)
         document.getElementById("bottom-left").append(div1)
+    }
+    function fun1(){
+        window.open("../project.html","_self")
     }
 </script>

@@ -220,8 +220,8 @@ body {
 <body>
     <!-- TOP SECTION  -->
     <div id="navbar">
-        <img src="https://img.shop.com/Image/resources/logos/shop-logo-us.svg" alt="shop.com logo">
-        <a href="./project.html">Continue Shopping</a>
+        <img src="https://img.shop.com/Image/resources/logos/shop-logo-us.svg" alt="shop.com logo" onclick="fun1()">
+        <a href="./project.html" onclick="fun1()">Continue Shopping</a>
     </div>
     <!-- MIDDLE SECTON  -->
     <!-- <h1 style="text-align: center;font-style: italic;font-size: xx-large;font-family: cursive;">TOTAL PRICE ₹0</h1> -->
@@ -305,5 +305,8 @@ body {
         }else{
             alert("Enter correct Card Information")
         }  
+    }
+    function fun1(){
+        window.open("../project.html","_self")
     }
 </script>
