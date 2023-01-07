@@ -34,10 +34,11 @@
 .child {
     display: flex;
     justify-content: space-between;
-    width: 30%;
+    width: 650px;
     margin-left: -140px;
-    font-family: Roboto, Arial, Helvetica, sans-serif;
-
+    font-family: Roboto,Arial,Helvetica,sans-serif;
+    font-size: 15px;
+    margin-left: 10px;
 }
 
 .child>a {
@@ -112,6 +113,7 @@ form {
     width: 30px;
     padding-right: 15px;
     border-radius: 0px 50px 50px 0px;
+    cursor: pointer;
 }
 
 .btn1>img {

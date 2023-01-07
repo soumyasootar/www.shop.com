@@ -8,8 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/f276ecc4c7.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/x-icon" href="https://img.shop.com/Image/resources/logos/shop-s-logo-icon.svg">
-<script src="project.js"></script>
-<script src="scroll.js"></script>
+
 </head>
 <body>
 
@@ -38,7 +37,7 @@
         <option value="Clothes">Clothes</option>
         </select>
         <div style="display: flex; width: 100%; border-left:1px solid black;">
-        <input type="text" placeholder="Search SHOP.COM..." class="nav-bar-input">
+        <input id="search" type="text" placeholder="Search SHOP.COM..." class="nav-bar-input">
         <button class="btn1">
             <i class="fa fa-search" aria-hidden="true" style="color:white"></i>
         </button>
@@ -83,15 +82,15 @@
     </ul>
 </div>
 
-    <div class="child">
-        <a href="exclusive.html">Exclusive Brands</a>
-        <a href="">Stores</a>
-        <a href="">Deals</a>
-        <a href="">SHOP Travel</a>
-        <a href="">Departments</a>
-        <a href="">ShopBuddy</a>
-        <a href="">SHOP Local</a>
-    </div>
+<div class="child">
+    <a href="exclusive.html">Exclusive Brands</a>
+    <a href="clothe.html">Stores</a>
+    <a href="beauty.html">Deals</a>
+    <a href="">SHOP Travel</a>
+    <a href="">Departments</a>
+    <a href="">ShopBuddy</a>
+    <a href="shoplocal.html">SHOP Local</a>
+</div>
 
     <div class="child-second-section">
     
@@ -125,7 +124,7 @@
     </div>
 
 <div class="poster">
-    <img src="https://img.shop.com/Image/homepage/shop_usa_100106_eng_2022_holiday_end_of__season_sales_banners_and_social_media_assets_1600x300-img-min1671568635725.jpg" alt="">
+    <img id="poster" src="https://img.shop.com/Image/homepage/shop_usa_100106_eng_2022_holiday_end_of__season_sales_banners_and_social_media_assets_1600x300-img-min1671568635725.jpg" alt="">
 </div>
 
 <div class="main-div">
@@ -134,7 +133,7 @@
     </div>
 <div class="popular-brand-section">
     <div class="left-side-img">
-        <img src="https://img.shop.com/Image/homepage/tls-us-eng-106789-core-coffe-holiday-banner-600x600-img1672269167610.jpg" alt="">
+        <img id="cloth2" src="https://img.shop.com/Image/homepage/tls-us-eng-106789-core-coffe-holiday-banner-600x600-img1672269167610.jpg" alt="">
     </div>
     
     <div class="parent-div">
@@ -164,7 +163,7 @@
                 <h3>Markdowns Up to 60% Off</h3>
             </div>
             <div>
-                <img src="https://img.shop.com/Image/homepage/us-eng-gap-media-dc221671474343185.png" alt="">
+                <img  src="https://img.shop.com/Image/homepage/us-eng-gap-media-dc221671474343185.png" alt="">
 
                 <h4>2.00% Cashback</h4>
                 <p>SALE, Extra Off Markdowns With code SALE!</p>
@@ -677,3 +676,6 @@
 </div>
 </body>
 </html>
+
+<script src="project.js"></script>
+<script src="scroll.js"></script>

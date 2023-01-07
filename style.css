@@ -91,6 +91,7 @@ form{
         width: 30px; 
         padding-right: 15px; 
         border-radius: 0px 50px 50px 0px;
+        cursor: pointer;
 }
 .btn1>img{
     width: 75%;
@@ -333,6 +334,7 @@ color: #202340;
    .poster > img{
     width: 100%;
     margin-top: -20px;
+    cursor: pointer;
    }
    .second-brands-div{
     display: flex;
@@ -789,3 +791,9 @@ margin-top: 15px;
     height: 45px;
     width: 45px;
   }
+
+  /* functionality */
+
+#cloth2{
+    cursor: pointer;
+}

@@ -113,6 +113,7 @@ form {
     width: 30px;
     padding-right: 15px;
     border-radius: 0px 50px 50px 0px;
+    cursor: pointer;
 }
 
 .btn1>img {
@@ -418,11 +419,13 @@ body {
     border-radius: 2px;
     resize: vertical;
     margin: 15px auto;
-    padding: 7px;
+    padding:7px;
     height: 150px;
     width: 90%;
     border-radius: 10px;
+   
 }
+
 #feedback>button{
     background-color: #fff;
     border: 1px solid #414467;
@@ -571,21 +574,25 @@ body {
     }
     .child{
         display: grid;
-        grid-template-columns: repeat(5,1fr);
+        grid-template-columns: repeat(3,1fr);
         gap: 10px;
-        margin-left: -200px;
+       margin-left: 40px;
         
     }
     #form{
         display: flex;
-        margin-left: 60px;
+        margin-left: 30px;
     }
     .second-logo>img{
         height: 30px;
-        margin-right: 40px;
+        
     }
     .child-second-section{
-        margin-right: 70px;
+        margin-right: 40px;
+        margin: auto;
+    }
+    .signIn{
+        margin-right: 20px;
     }
     .cart-section{
         padding: 5px;
@@ -603,22 +610,23 @@ body {
     
     }
     .child{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        gap: 1px;
-        margin-left: -200px;
-        
+      display: none;
     }
     #form{
         display: flex;
         margin-left: 60px;
     }
     .second-logo>img{
-        height: 30px;
-        margin-right: 40px;
+        height: 15px;
+        margin-right: 10px; 
     }
     .child-second-section{
-        margin-right: 70px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        margin-right: 50px;
     }
     .cart-section{
         padding: 5px;
