@@ -405,6 +405,8 @@ function funsearch(){
     }else if(key.includes("SPORTS")){
         window.open("sports.html","_self");
         document.querySelector("#search").value="";
+    }else{
+        alert("item not found");
     }
 }
 
