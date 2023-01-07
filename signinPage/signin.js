@@ -12,7 +12,7 @@ function signin(e) {
       localStorage.setItem("currentUser", JSON.stringify(old_data[i]));
       alert("Sign In Successfull");
 
-      window.Location.href = "./index.html";
+      window.open("../project.html")
       return;
     }
   }

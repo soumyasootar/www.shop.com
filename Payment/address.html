@@ -230,6 +230,47 @@
             display: flex;
             flex-direction: column;
         }
+        
+        @media screen and (max-width: 700px) {
+        #bottom{
+            display: flex;
+            flex-direction: column;
+            padding-left: 15px;
+        }
+        hr{
+            width: 48%;
+        }
+        #right4,#right3,#right2,#right5,#boxx{
+            width: 48%;
+        }
+        #right6{
+            width:20%;
+            margin-left: 28%;
+            margin-bottom: 20px;
+        }
+        #rightl1{
+            margin-top: 30px;
+        }
+        #left1{
+            width: 45%;
+        }
+        #checkout{
+            width: 45%;
+            /* background-color: #00a8ca; */
+            margin-left: 0px;
+        }
+        .threebuttons{
+            width: 45%;
+            /* background-color: #00a8ca; */
+            margin-left: 30px;
+        }
+        #right7,#right8,#right9{
+            margin-top: 10px;
+            width: 45%;
+            text-align: center;
+        }
+
+        }
     </style>
 </head>
 <body>
@@ -240,7 +281,7 @@
     </div>
     <!-- MIDDLE SECTON  -->
     <div id="mid">
-        <div class="Checkout">
+        <div class="Checkout" id="checkout">
             <h1>Checkout</h1>
             <p style="font-size: 1.05em;">Order Total: $<span id="total">0.00</span> </p>
         </div>
@@ -250,7 +291,7 @@
             <button>Payment</button>
         </div>
         <br>
-        <hr>
+        <hr id="line33">
         <br>
         <div id="bottom" >
             <div id="left">
