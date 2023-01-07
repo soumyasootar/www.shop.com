@@ -428,8 +428,9 @@
                 localStorage.setItem("total-payment",total)
                 localStorage.setItem("local-subtotal",total)
                 document.querySelector("#total").textContent=total
-                document.querySelector("#tax").textContent=total*0.15
-                document.querySelector("#right2ab>#total").textContent=total-total*0.15
+                var x=(total*0.2).toFixed(1);
+                document.querySelector("#tax").textContent=x
+                document.querySelector("#right2ab>#total").textContent=(total-x).toFixed(1);
                 document.querySelector("#right3b>#total").textContent=total
             })
         }

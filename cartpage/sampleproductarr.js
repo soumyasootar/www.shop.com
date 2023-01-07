@@ -3,7 +3,7 @@ total_price()
 
 showdata(cart_product_arr);
 function proceedtopayment(){
-    window.open("/Payment/address.html","_self")
+    window.open("../Payment/address.html","_self")
 }
 function showdata(mensData){
     document.querySelector(".cart-product").textContent = "";
@@ -88,6 +88,7 @@ function total_price(){
         return elem + Number(curr.price);
     },0)
     document.getElementById("totalprice").innerText = `$${subtotal}`;
+    localStorage.setItem("local-subtotal",subtotal)
 }
 
 function quantity(elem,index,div){

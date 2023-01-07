@@ -5,7 +5,7 @@ showdata(cart_product_arr);
 function showdata(mensData){
     document.querySelector(".cart-product").textContent = "";
     mensData.map(function(elem,index){
-        localStorage.setItem("cart-list",JSON.stringify(cart_product_arr)); 
+       // localStorage.setItem("order-list1",JSON.stringify(cart_product_arr)); 
         let div = document.createElement("div");
         div.setAttribute("class","product-box")
         div.innerHTML = 

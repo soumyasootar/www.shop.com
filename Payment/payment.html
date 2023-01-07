@@ -489,20 +489,21 @@
         var promo=document.getElementById("bottom-right3a").value;
         console.log(promo)
         if(promo==="masai30"){
-            document.querySelector("#bottom-right2").innerText="Coupon applied 🥲🥲🥲";
+            document.querySelector("#bottom-right2").innerText="Coupon applied 😢";
             document.querySelector("#bottom-right2").style.color="green";
             document.querySelector("#bottom-right2").style.fontWeight="600"
             var discount=JSON.parse(localStorage.getItem("local-subtotal"))
             var off=discount*0.3
-            discount=discount-off
+            off.toFixed(1);
+            discount=(discount-off).toFixed(1);
             localStorage.setItem("local-subtotal",JSON.stringify(discount))
             localStorage.setItem("total-payment",JSON.stringify(discount))
             total=JSON.parse(localStorage.getItem("total-payment"))||0
-            let x=(total-total*0.15).toFixed(1)
+            let x=(total-total*0.2).toFixed(1)
             document.querySelector("#total").textContent=total
             document.querySelector("#right3b>#total").textContent=total
             document.querySelector("#right2ab>#total").textContent=x
-            document.querySelector("#tax").textContent=total*0.15
+            document.querySelector("#tax").textContent=total*0.2
             document.querySelector("#right3b>#total").textContent=total
             document.querySelector("#right206>#discount").textContent=off
         }
@@ -517,8 +518,8 @@
      total=JSON.parse(localStorage.getItem("total-payment"))||0
     document.querySelector("#total").textContent=total
     document.querySelector("#right3b>#total").textContent=total
-    document.querySelector("#right2ab>#total").textContent=total-total*0.15
-    document.querySelector("#tax").textContent=total*0.15
+    document.querySelector("#right2ab>#total").textContent=(total-total*0.2).toFixed(1);
+    document.querySelector("#tax").textContent=(total*0.2).toFixed(1);
     document.querySelector("#right3b>#total").textContent=total
     showaddress(address)
     function showaddress(obj){
