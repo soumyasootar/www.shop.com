@@ -10,13 +10,13 @@ function signin(e) {
     if (email == old_data[i].email && password == old_data[i].password) {
       outputName=old_data[i].fname;
       localStorage.setItem("currentUser", JSON.stringify(old_data[i]));
-      localStorage.setItem("userName", JSON.stringify(outputName));
+      
       alert("Sign In Successfull");
-      window.Location.href = "./signup.html";
+      // window.Location.href = "../project.html";
       document.getElementById("email").value="";
       document.getElementById("password").value="";
       console.log(outputName)
-
+      window.open("../project.html")
       return;
     }
   }

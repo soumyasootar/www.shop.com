@@ -34,5 +34,7 @@ function showdata(mensData){
         })
         
     }
+    //username
+document.querySelector("#user-name1").textContent=JSON.parse(localStorage.getItem("userName"))||"Sign In"
 
 

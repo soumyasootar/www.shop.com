@@ -470,5 +470,6 @@ document.getElementById("submitfeedback").addEventListener("click",function(){
         alert("Thank you for your valuable feedback!!!");
     }
 });
-
+//username
+document.querySelector("#user-name1").textContent=JSON.parse(localStorage.getItem("userName"))||"Sign In"
 

@@ -628,5 +628,6 @@ document.getElementById("submitfeedback").addEventListener("click",function(){
         alert("Thank you for your valuable feedback!!!");
     }
 });
-
-
+console.log(JSON.parse(localStorage.getItem("userName"))||"Sign In")
+console.log(document.querySelector("span>#signin-page1").querySelector("#user-name1"))
+//username

@@ -168,4 +168,5 @@ function funsearch(){
         alert("item not found");
     }
 }
-
+//username
+document.querySelector("#user-name1").textContent=JSON.parse(localStorage.getItem("userName"))||"Sign In"

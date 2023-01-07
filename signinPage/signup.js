@@ -4,6 +4,7 @@ function signup(e) {
   e.preventDefault();
   console.log("signup");
   var fname = document.getElementById("fname").value;
+  localStorage.setItem("userName", JSON.stringify(fname));
   var lname = document.getElementById("lname").value;
   var email = document.getElementById("email").value;
   var password = document.getElementById("password").value;

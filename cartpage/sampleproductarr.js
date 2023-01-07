@@ -104,6 +104,7 @@ function quantity(elem,index,div){
     document.getElementById("totalprice").innerText = `$${subtotal}`;
 }
 
-
+//username
+document.querySelector("#user-name1").textContent=JSON.parse(localStorage.getItem("userName"))||"Sign In"
 
         
