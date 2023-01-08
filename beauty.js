@@ -9,7 +9,7 @@ var beauty = [
         price: "40.00",
         ratio: "+ up to $3.00 / 8% Cashback",
         shipping: "Free shipping with $50.00 orders",
-        category:"makeup"
+        category: "makeup"
 
     },
     {
@@ -21,7 +21,7 @@ var beauty = [
         price: "15.00",
         ratio: "+  $2.40 / 3% Cashback",
         shipping: "Free shipping with $40.00 orders",
-        category:"makeup"
+        category: "makeup"
     },
     {
         img:
@@ -32,7 +32,7 @@ var beauty = [
         price: "30.00",
         ratio: "+ up to $1.22 / 2% Cashback",
         shipping: "Free shipping with $40.00 orders",
-        category:"makeup"
+        category: "makeup"
     },
     {
         img:
@@ -43,7 +43,7 @@ var beauty = [
         price: "40.00",
         ratio: "+ up to $1.22 / 2% Cashback",
         shipping: "Free shipping with $40.00 orders",
-        category:"makeup"
+        category: "makeup"
     },
     {
         img:
@@ -54,7 +54,7 @@ var beauty = [
         price: "20",
         ratio: "+  $0.63 / 3% Cashback",
         shipping: "Free shipping with $40.00 orders",
-        category:"skincare"
+        category: "skincare"
     },
     {
         img:
@@ -65,7 +65,7 @@ var beauty = [
         price: "53",
         ratio: "+  $0.63 / 6% Cashback",
         shipping: "Free shipping with $40.00 orders",
-        category:"skincare"
+        category: "skincare"
     },
 
     {
@@ -77,7 +77,7 @@ var beauty = [
         price: "53",
         ratio: "+  $0.63 / 3% Cashback",
         shipping: "Free shipping with $40.00 orders",
-        category:"skincare"
+        category: "skincare"
     },
     {
         img:
@@ -88,7 +88,7 @@ var beauty = [
         price: "33",
         ratio: "+  $0.63 / 3% Cashback",
         shipping: "Free shipping with $40.00 orders",
-        category:"skincare"
+        category: "skincare"
     },
     {
         img:
@@ -99,7 +99,7 @@ var beauty = [
         price: "39",
         ratio: "+  $0.63 / 3% Cashback",
         shipping: "Free shipping with $40.00 orders",
-        category:"haircare"
+        category: "haircare"
     },
     {
         img:
@@ -110,7 +110,7 @@ var beauty = [
         price: "55",
         ratio: "+  $0.63 / 3% Cashback",
         shipping: "Free shipping with $40.00 orders",
-        category:"haircare"
+        category: "haircare"
     },
     {
         img:
@@ -121,7 +121,7 @@ var beauty = [
         price: "27",
         ratio: "+  $0.63 / 3% Cashback",
         shipping: "Free shipping with $40.00 orders",
-        category:"haircare"
+        category: "haircare"
     },
     {
         img:
@@ -132,7 +132,7 @@ var beauty = [
         price: "25",
         ratio: "+  $0.63 / 3% Cashback",
         shipping: "Free shipping with $40.00 orders",
-        category:"haircare"
+        category: "haircare"
     },
     {
         img:
@@ -143,7 +143,7 @@ var beauty = [
         price: "40",
         ratio: "+ up to $3.00 / 8% Cashback",
         shipping: "Free shipping with $40.00 orders",
-        category:"lipstick"
+        category: "lipstick"
 
     },
     {
@@ -155,7 +155,7 @@ var beauty = [
         price: "79",
         ratio: "+  $2.40 / 3% Cashback",
         shipping: "Free shipping with $40.00 orders",
-        category:"lipstick"
+        category: "lipstick"
     },
     {
         img:
@@ -166,7 +166,7 @@ var beauty = [
         price: "45",
         ratio: "+ up to $1.22 / 2% Cashback",
         shipping: "Free shipping with $40.00 orders",
-        category:"lipstick"
+        category: "lipstick"
     },
     {
         img:
@@ -177,7 +177,7 @@ var beauty = [
         price: "110",
         ratio: "+ up to $1.22 / 2% Cashback",
         shipping: "Free shipping with $40.00 orders",
-        category:"lipstick"
+        category: "lipstick"
     },
     {
         img:
@@ -188,7 +188,7 @@ var beauty = [
         price: "20",
         ratio: "+  $0.63 / 3% Cashback",
         shipping: "Free shipping with $40.00 orders",
-        category:"bath"
+        category: "bath"
     },
     {
         img:
@@ -199,7 +199,7 @@ var beauty = [
         price: "53",
         ratio: "+  $0.63 / 6% Cashback",
         shipping: "Free shipping with $40.00 orders",
-        category:"bath"
+        category: "bath"
     },
 
     {
@@ -211,7 +211,7 @@ var beauty = [
         price: "53",
         ratio: "+  $0.63 / 3% Cashback",
         shipping: "Free shipping with $40.00 orders",
-        category:"bath"
+        category: "bath"
     },
     {
         img:
@@ -222,7 +222,7 @@ var beauty = [
         price: "33",
         ratio: "+  $0.63 / 3% Cashback",
         shipping: "Free shipping with $40.00 orders",
-        category:"bath"
+        category: "bath"
     },
     {
         img:
@@ -233,7 +233,7 @@ var beauty = [
         price: "39",
         ratio: "+  $0.63 / 3% Cashback",
         shipping: "Free shipping with $40.00 orders",
-        category:"perfume"
+        category: "perfume"
     },
     {
         img:
@@ -244,7 +244,7 @@ var beauty = [
         price: "55",
         ratio: "+  $0.63 / 3% Cashback",
         shipping: "Free shipping with $40.00 orders",
-        category:"perfume"
+        category: "perfume"
     },
     {
         img:
@@ -255,7 +255,7 @@ var beauty = [
         price: "27",
         ratio: "+  $0.63 / 3% Cashback",
         shipping: "Free shipping with $40.00 orders",
-        category:"perfume"
+        category: "perfume"
     },
     {
         img:
@@ -266,9 +266,9 @@ var beauty = [
         price: "25",
         ratio: "+  $0.63 / 3% Cashback",
         shipping: "Free shipping with $40.00 orders",
-        category:"perfume"
+        category: "perfume"
     },
-   
+
     {
         img:
             "https://img.shop.com/Image/240000/247900/247927/products/1882030062.jpg?plain&size=400x400",
@@ -278,7 +278,7 @@ var beauty = [
         price: "79",
         ratio: "+  $2.40 / 3% Cashback",
         shipping: "Free shipping with $40.00 orders",
-        category:"dental"
+        category: "dental"
     },
     {
         img:
@@ -289,7 +289,7 @@ var beauty = [
         price: "45",
         ratio: "+ up to $1.22 / 2% Cashback",
         shipping: "Free shipping with $40.00 orders",
-        category:"dental"
+        category: "dental"
     },
     {
         img:
@@ -300,7 +300,7 @@ var beauty = [
         price: "110",
         ratio: "+ up to $1.22 / 2% Cashback",
         shipping: "Free shipping with $40.00 orders",
-        category:"dental"
+        category: "dental"
     },
     {
         img:
@@ -311,7 +311,7 @@ var beauty = [
         price: "20",
         ratio: "+  $0.63 / 3% Cashback",
         shipping: "Free shipping with $40.00 orders",
-        category:"dental"
+        category: "dental"
     },
     {
         img:
@@ -322,19 +322,19 @@ var beauty = [
         price: "53",
         ratio: "+  $0.63 / 6% Cashback",
         shipping: "Free shipping with $40.00 orders",
-        category:"hair"
+        category: "hair"
     },
 
     {
         img:
             "https://img.shop.com/Image/240000/243400/243406/products/1932647269.jpg?plain&size=400x400",
         name: "Women's Floral Gardena Crystal Barrette",
-        soldBy: " Sold by Macy's "  ,
+        soldBy: " Sold by Macy's ",
         strikedprice: "189",
         price: "53",
         ratio: "+  $0.63 / 3% Cashback",
         shipping: "Free shipping with $40.00 orders",
-        category:"hair"
+        category: "hair"
     },
     {
         img:
@@ -345,7 +345,7 @@ var beauty = [
         price: "33",
         ratio: "+  $0.63 / 3% Cashback",
         shipping: "Free shipping with $40.00 orders",
-        category:"hair"
+        category: "hair"
     },
     {
         img:
@@ -356,7 +356,7 @@ var beauty = [
         price: "39",
         ratio: "+  $0.63 / 3% Cashback",
         shipping: "Free shipping with $40.00 orders",
-        category:"hair"
+        category: "hair"
     },
     {
         img:
@@ -367,7 +367,7 @@ var beauty = [
         price: "55",
         ratio: "+  $0.63 / 3% Cashback",
         shipping: "Free shipping with $40.00 orders",
-        category:"cosmetics"
+        category: "cosmetics"
     },
     {
         img:
@@ -378,7 +378,7 @@ var beauty = [
         price: "27",
         ratio: "+  $0.63 / 3% Cashback",
         shipping: "Free shipping with $40.00 orders",
-        category:"cosmetics"
+        category: "cosmetics"
     },
     {
         img:
@@ -389,7 +389,7 @@ var beauty = [
         price: "25",
         ratio: "+  $0.63 / 3% Cashback",
         shipping: "Free shipping with $40.00 orders",
-        category:"cosmetics"
+        category: "cosmetics"
     },
     {
         img:
@@ -400,7 +400,7 @@ var beauty = [
         price: "25",
         ratio: "+  $0.63 / 3% Cashback",
         shipping: "Free shipping with $40.00 orders",
-        category:"cosmetics"
+        category: "cosmetics"
     },
 
 ];
@@ -436,11 +436,11 @@ function displayfun(q) {
         var pr = document.createElement("p");
 
         var sp1 = document.createElement("span");
-        sp1.innerText ="$"+elem.strikedprice;
+        sp1.innerText = "$" + elem.strikedprice;
         sp1.style.fontSize = ".75rem";
         sp1.style.textDecoration = "line-through";
         var sp2 = document.createElement("span");
-        sp2.innerText = "$"+elem.price;
+        sp2.innerText = "$" + elem.price;
         sp2.setAttribute("class", "oprice");
         pr.append(sp1, sp2);
         pr.style.marginTop = "-6px";
@@ -471,18 +471,18 @@ function displayfun(q) {
         var bdiv = document.createElement("div");
         bdiv.setAttribute("class", "buttons")
 
-        
+
         var sd = document.createElement("div");
-        
-        var anchor=document.createElement("a");
-        anchor.innerText="See Details";
+
+        var anchor = document.createElement("a");
+        anchor.innerText = "See Details";
         sd.append(anchor);
-        anchor.setAttribute("href","details.html");
-        anchor.setAttribute("class","anch");
-        anchor.addEventListener("click",function(){
+        anchor.setAttribute("href", "details.html");
+        anchor.setAttribute("class", "anch");
+        anchor.addEventListener("click", function () {
             det(elem);
         });
-       
+
         //sd.setAttribute("class", "details"); 
         var atc = document.createElement("button");
         atc.innerText = "Add to Cart";
@@ -500,10 +500,10 @@ function displayfun(q) {
     });
 }
 
-function det(elem){
-        var arr=[];
-        arr.push(elem);
-        localStorage.setItem("detail",JSON.stringify(arr));
+function det(elem) {
+    var arr = [];
+    arr.push(elem);
+    localStorage.setItem("detail", JSON.stringify(arr));
     //location.replace("details.html");
 }
 var cartArr = JSON.parse(localStorage.getItem("cart-list")) || [];
@@ -544,7 +544,7 @@ document.querySelector("#filterbath3").addEventListener("click", filterfun8);
 document.querySelector("#filterbath4").addEventListener("click", filterfun9);
 
 function filterfun1() {
-    let q =beauty.filter(function (item) {
+    let q = beauty.filter(function (item) {
         if (item.category == "makeup") {
             return item;
         }
@@ -626,59 +626,77 @@ function onClickMenu() {
 }
 
 /* <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= --> */
-document.querySelector(".logo").addEventListener("click",function(){
+document.querySelector(".logo").addEventListener("click", function () {
     window.open("project.html");
 });
 
 // search functionality
 
-document.querySelector(".btn1").addEventListener("click",funsearch);
+document.querySelector(".btn1").addEventListener("click", funsearch);
 
-function funsearch(){
+function funsearch() {
     event.preventDefault();
-    var key=document.querySelector("#search").value;
-    key=key.toUpperCase();
-    if(key.includes("BEAUTY")){
-        window.open("beauty.html","_self");
-        document.querySelector("#search").value="";
-    }else if(key.includes("CLOTH")){
-        window.open("clothe.html","_self");
-        document.querySelector("#search").value="";
-    }else if(key.includes("FOOD")){
-        window.open("food.html","_self");
-        document.querySelector("#search").value="";
-    }else if(key.includes("HEALTH")){
-        window.open("health.html","_self");
-        document.querySelector("#search").value="";
-    }else if(key.includes("HOME")){
-        window.open("home.html","_self");
-        document.querySelector("#search").value="";
-    }else if(key.includes("JWELLERY")){
-        window.open("jwellery.html","_self");
-        document.querySelector("#search").value="";
-    }else if(key.includes("KIDS")){
-        window.open("kids.html","_self");
-        document.querySelector("#search").value="";
-    }else if(key.includes("PET")){
-        window.open("pet.html","_self");
-        document.querySelector("#search").value="";
-    }else if(key.includes("SHOES")){
-        window.open("shoes.html","_self");
-        document.querySelector("#search").value="";
-    }else if(key.includes("SPORTS")){
-        window.open("sports.html","_self");
-        document.querySelector("#search").value="";
-    }else{
+    var key = document.querySelector("#search").value;
+    key = key.toUpperCase();
+    if (key.includes("BEAUTY")) {
+        window.open("beauty.html", "_self");
+        document.querySelector("#search").value = "";
+    } else if (key.includes("CLOTH")) {
+        window.open("clothe.html", "_self");
+        document.querySelector("#search").value = "";
+    } else if (key.includes("FOOD")) {
+        window.open("food.html", "_self");
+        document.querySelector("#search").value = "";
+    } else if (key.includes("HEALTH")) {
+        window.open("health.html", "_self");
+        document.querySelector("#search").value = "";
+    } else if (key.includes("HOME")) {
+        window.open("home.html", "_self");
+        document.querySelector("#search").value = "";
+    } else if (key.includes("JWELLERY")) {
+        window.open("jwellery.html", "_self");
+        document.querySelector("#search").value = "";
+    } else if (key.includes("KIDS")) {
+        window.open("kids.html", "_self");
+        document.querySelector("#search").value = "";
+    } else if (key.includes("PET")) {
+        window.open("pet.html", "_self");
+        document.querySelector("#search").value = "";
+    } else if (key.includes("SHOES")) {
+        window.open("shoes.html", "_self");
+        document.querySelector("#search").value = "";
+    } else if (key.includes("SPORTS")) {
+        window.open("sports.html", "_self");
+        document.querySelector("#search").value = "";
+
+    }
+    else if (key.includes("ELECTRONICS")) {
+        window.open("electronic.html", "_self");
+        document.querySelector("#search").value = "";
+    }
+    else {
         alert("item not found");
     }
 }
 
 //feedback
-document.getElementById("submitfeedback").addEventListener("click",function(){
-    let val=document.getElementById("feedbacktext").value;
-    if(val.length>0){
+document.getElementById("submitfeedback").addEventListener("click", function () {
+    let val = document.getElementById("feedbacktext").value;
+    if (val.length > 0) {
         alert("Thank you for your valuable feedback!!!");
     }
 });
 //username
-document.querySelector("#user-name").textContent=JSON.parse(localStorage.getItem("userName"))||"Sign In"
+document.querySelector("#user-name").textContent = JSON.parse(localStorage.getItem("userName")) || "Sign In"
+
+// microphone
+const button = document.querySelector('#mic');
+const textInput = document.querySelector('#search');
+
+button.addEventListener('click', () => {
+    const recognition = new webkitSpeechRecognition();
+    recognition.onresult = event => {
+        textInput.value = event.results[0][0].transcript;
+    };
+    recognition.start();
+}); 

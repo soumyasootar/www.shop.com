@@ -453,6 +453,10 @@ function funsearch(){
     }else if(key.includes("SHOES")){
         window.open("shoes.html","_self");
         document.querySelector("#search").value="";
+    }
+    else if (key.includes("ELECTRONICS")) {
+        window.open("electronic.html", "_self");
+        document.querySelector("#search").value = "";
     }else if(key.includes("SPORTS")){
         window.open("sports.html","_self");
         document.querySelector("#search").value="";
@@ -469,3 +473,16 @@ document.getElementById("submitfeedback").addEventListener("click",function(){
 });
 //username
 document.querySelector("#user-name").textContent=JSON.parse(localStorage.getItem("userName"))||"Sign In"
+
+
+// microphone
+const button = document.querySelector('#mic');
+const textInput = document.querySelector('#search');
+
+button.addEventListener('click', () => {
+  const recognition = new webkitSpeechRecognition();
+  recognition.onresult = event => {
+    textInput.value = event.results[0][0].transcript;
+  };
+  recognition.start();
+}); 
