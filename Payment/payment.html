@@ -423,7 +423,7 @@
                 <br>
                 <ul class="list-group" id="left2" style="border: 1px solid #DADBE6; ">
                     <li class="list-group-item" id="left3" style="margin: 10px;">
-                        <input type="radio">
+                        <input type="radio" style="cursor:pointer;">
                         <p>Enter Payment Method
                         <img src="https://img.shop.com/Image/local/images/cc/amex.jpg
                         " alt="">
@@ -433,7 +433,7 @@
                     </li>
                     <hr>
                     <li class="list-group-item" id="left3" style="margin: 10px;">
-                        <input type="radio">
+                        <input style="cursor:pointer;" type="radio">
                         <img src="https://bitpay.com/cdn/merchant-resources/bitpay-accepted-card-group.svg" alt="" style="width: 200px;">
                     </li>
                     <hr>
@@ -443,19 +443,19 @@
                     </li>
                     <hr>
                     <li class="list-group-item" id="left3" style="margin: 10px;">
-                        <input type="radio">
+                        <input style="cursor:pointer;" type="radio">
                         <img src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/checkout-logo-medium.png"
                             alt="">
                     </li>
                     <hr>
                     <li class="list-group-item" id="left3" style="margin: 10px;">
-                        <input type="radio">
+                        <input style="cursor:pointer;" type="radio">
                         <img src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/ppcredit_MD_BNPOT_1x.png"
                             alt="">
                     </li>
                     <hr>
                     <li class="list-group-item" id="left3" style="margin: 10px;">
-                        <input type="radio">
+                        <input style="cursor:pointer;" type="radio">
                         <img src="https://src.mastercard.com/assets/img/btn/src_chk_btn_147x034px.svg?locale=en_us&paymentmethod=master,visa,discover,amex&checkoutid=a4a6w4v6h7cg0iaijxn0j1iaoelnus5936"
                             alt="">
                     </li>   
@@ -474,7 +474,7 @@
                             <p id="bottom-right2">Coupon</p>
                             <div id="bottom-right3">
                                 <input id="bottom-right3a" font-style="italic" type="text" placeholder="Coupon Code">
-                                <button id="bottom-right3b">Apply</button>
+                                <button style="cursor:pointer;" id="bottom-right3b">Apply</button>
                             </div>
                             <p id="bottom-right40" style="margin-top: 10px;">Gift Card</p>
                             <div id="bottom-right4">
@@ -484,7 +484,7 @@
                             <p id="bottom-right5">Pin:</p>
                             <div id="bottom-right6">
                                 <input id="bottom-right6a" font-style="italic" type="text" placeholder="Pin">
-                                <button id="bottom-right3b">Apply</button>
+                                <button style="cursor:pointer;" id="bottom-right3b">Apply</button>
                             </div>
     
                         </div>
@@ -492,7 +492,7 @@
                 </div>
             </div>
             <div class="right">
-                <p id="line4a" ">Shipping Address</p>
+                <p id="line4a" >Shipping Address</p>
                 <div id="box4"></div>
                 <div id="right">
                     <h2 id="rightl1">Order Summary</h2>
@@ -535,8 +535,8 @@
                         <p id="r6e">Message and data rates may apply</p>
                     </div>
                     <div id="right7">
-                        <a id="right7a" href="./shipping.html" style="color: black;"> <img src="https://cdn.pixabay.com/photo/2012/04/10/23/37/arrow-27066_960_720.png" alt="$" style="width: 13px;"> Shipping</a>
-                        <a href="./Carddetails.html"> <button id="right7b" onclick="">Place Order</button></a>
+                        <a id="right7a" href="./shipping.html" style="color: black; cursor:pointer;"> <img src="https://cdn.pixabay.com/photo/2012/04/10/23/37/arrow-27066_960_720.png" alt="$" style="width: 13px;"> Shipping</a>
+                        <a href="./Carddetails.html"> <button style="cursor:pointer;" id="right7b" onclick="">Place Order</button></a>
                     </div>
                     <p id="right8">Let us know how we are doing <a href="#" style="color: #545871;">Send Feedback</a>
                 </div>
@@ -572,12 +572,12 @@
             discount=(discount-off).toFixed(1);
             localStorage.setItem("local-subtotal",JSON.stringify(discount))
             localStorage.setItem("total-payment",JSON.stringify(discount))
-            total=JSON.parse(localStorage.getItem("total-payment"))||0
+            total=JSON.parse(localStorage.getItem("total-payment"))||0;
             let x=(total-total*0.2).toFixed(1)
             document.querySelector("#total").textContent=total
             document.querySelector("#right3b>#total").textContent=total
             document.querySelector("#right2ab>#total").textContent=x
-            document.querySelector("#tax").textContent=total*0.2
+            document.querySelector("#tax").textContent=(total*0.2).toFixed(1)
             document.querySelector("#right3b>#total").textContent=total
             document.querySelector("#right206>#discount").textContent=off
         }

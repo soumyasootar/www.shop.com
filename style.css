@@ -2,6 +2,8 @@
         margin: 0;
         padding: 0;
         text-decoration: none;
+            font-family: Arial;
+       
     }
  .nav-first-section , .nav-second-section{
     display: flex;
@@ -16,9 +18,7 @@
  .nav-second-section{
  padding-bottom: 15px;
  }
- *{
-    font-family: Arial;
- }
+
 .child {
     display: flex;
     justify-content: space-between;
@@ -32,6 +32,28 @@
 .child > a{
     color: #202340;
 }
+
+#mic {
+    font-size: 140%;
+    width: 5%;
+    margin: auto;
+    padding: 0px 0px 0px 6px;
+    cursor: pointer;
+}
+
+.nav-bar-input{
+    font-size: 15px;
+    width: 100%;
+    border: none;
+    border-left: 1px solid black;
+    margin: 5px 0px;
+    padding-left: 10px;
+    font-size: 15px;
+    }
+    .nav-bar-input:focus {
+    outline: none;
+    font-size: 15px;
+    }
 
 .logo > img{
     width: 100%;
@@ -796,4 +818,109 @@ margin-top: 15px;
 
 #cloth2{
     cursor: pointer;
+}
+
+@media only screen and (min-width: 390px) and (max-width: 844px) {
+
+   .footer-logos,  .product-one-img-two, .product-one-img ,#hide, .small-img, .left-side-img, .child , .second-logo,  .logo ,#NamesSorting, .none, #order-page1, .second-navbar-below-section, .bolder-text{
+        display: none;
+    }
+   .poster{
+    margin-top:20px;
+   }
+    .product-category-one{
+        margin: auto;
+    }
+    .mid-logo{
+        width:30%;
+        margin: auto;
+    }
+    .second-brands-div > div:last-child > h4{
+        font-size:20px;
+    } 
+    .mid-section-grid-layout h4 {
+        font-size:20px;
+        /* border: 2px solid red; */
+
+    }
+    .mid-section-grid-layout p {
+        font-size:12px;
+        /* border: 2px solid red; */
+
+    }
+    .second-brands-div > div:last-child > p{
+        font-size:15px;
+    }
+    #mic{
+        margin-right: 15px;
+    }
+    #menu , .cart-section{
+        margin-top:20px;
+    }
+    .brands-div{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+       
+    }
+    .parent-of-newyear{
+        margin: auto;
+        width: 100%;
+    }
+    .brand-section-cards{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+       
+    }
+     .brand-section-cards > div:last-child{
+        margin-left:60%;
+        width: 90%;
+    }
+    .popular-brands{
+        margin: auto;
+        width: 100%;
+    }
+    .cart-count{
+        padding: 0px 4px;
+    }
+    .new-year-section{
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+       gap: 10px;
+    }
+    .mid-section-grid-layout{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+       
+    }
+    .first-div{
+        display: flex;
+        flex-direction: column;
+    }
+    .first-div > div > label, input{
+        text-align: center;
+        margin-top: 10px;
+        /* border: 2px solid red; */
+    }
+    .first-div > div {
+        /* border: 2px solid red; */
+        text-align: center;
+        margin-top: 15px;
+    }
+    .second-brands-div{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+  
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+     .input-section{
+        width: 100%;
+        margin-left: 10px;
+       margin-top: -10px ;
+     }
+
 }

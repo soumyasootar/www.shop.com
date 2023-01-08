@@ -1,5 +1,6 @@
 /* <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= --> */
 
+
 .top-section {
     font-family: Arial;
     margin-top: -22px;
@@ -19,7 +20,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .nav-first-section {
@@ -78,43 +78,55 @@
     justify-content: space-between;
 }
 
-#NamesSorting {
-    padding: 13px 15px;
-    border: none;
-    border-radius: 50px;
+
+#mic{
+padding-top: 12px;
+font-size: 20px;
+cursor: pointer;
 }
+
 a{
     text-decoration: none;
 }
+
 select+input {
-    padding: 8px 80px;
-    width: 40%;
+    padding: 8px 17px;
+    width: 100%;
     border: none;
     border-left: 1px solid black;
+    font-size: 15px;
 }
+/* select+input:focus{
+    border: hidden;
+} */
 
-form {
-    border: 1px solid black;
-    border-radius: 50px;
-    overflow: hidden;
-    width: 100%;
-    background: white;
-}
+    form {
+        border: 1px solid black;
+        border-radius: 50px;
+        overflow: hidden;
+        width: 100%;
+        background: white;
+        display: flex;
+        flex-direction:row;
+    }
 
-.input-section {
-    width: 40%;
-    margin-left: -150px;
-}
+    .input-section {
+        display: flex;
+        flex-direction: column;
+        /* background: white; */
+        width: 45%;
+        margin-left: -8%;
+    }
 
-.btn1 {
-    background-color: #202340;
-    margin-left: 18px;
-    height: 45px;
-    width: 30px;
-    padding-right: 15px;
-    border-radius: 0px 50px 50px 0px;
-    cursor: pointer;
-}
+    .btn1 {
+        background-color: #202340;
+        margin-left: 18px;
+        height: 45px;
+        width: 30px;
+        padding-right: 15px;
+        border-radius: 0px 50px 50px 0px;
+        cursor: pointer;
+    }
 
 .btn1>img {
     width: 75%;
@@ -124,8 +136,7 @@ form {
     background: #f0f1f7;
     position: sticky;
     top: 0;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-    /* border: 2px solid black; */
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;   
 }
 
 .child-second-section>a,
@@ -180,6 +191,8 @@ a:hover {
 }
 
 /* .....................................HAMBERGER-MENU........................................... */
+
+
 
 #menu {
     width: 30px;
@@ -268,6 +281,7 @@ a:hover {
     flex-direction: column;
     justify-content: center;
 }
+
 
 /* <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= --> */
 body {

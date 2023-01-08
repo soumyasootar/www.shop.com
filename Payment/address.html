@@ -18,8 +18,6 @@
             -webkit-box-shadow: 0 0 8px #202340;
             box-shadow: 0 0 8px #202340;
             padding: 5px 10px;
-            /* position: fixed; */
-            /* position:absolute; */
             top: 0;
             width: 100%;
             z-index: 10;
@@ -30,10 +28,7 @@
         #navbar>img{
             width: 200px;
         }
-        /* #navbar>img:hover{
-            border: 1px dashed black;
-            position: relative
-        } */
+        
         #navbar>a{
             margin-right: 30px;
             margin-top: 4px;
@@ -52,10 +47,7 @@
         /* mid css */
         #mid{
             display: block;
-            /* margin-top: 30px; */
             justify-content: center;
-            /* border: 1px solid black; */
-            /* border: 5px solid black; */
             width: 1400px;
             margin:auto
         }
@@ -271,13 +263,15 @@
         }
 
         }
+
+
     </style>
 </head>
 <body>
     <!-- TOP SECTION  -->
     <div id="navbar">
-        <img src="https://img.shop.com/Image/resources/logos/shop-logo-us.svg" alt="shop.com logo" onclick="fun1()">
-        <a href="./project.html" onclick="fun1()">Continue Shopping</a>
+        <img style="cursor:pointer" src="https://img.shop.com/Image/resources/logos/shop-logo-us.svg" alt="shop.com logo" onclick="fun1()">
+        <a style="cursor:pointer" href="./project.html" onclick="fun1()">Continue Shopping</a>
     </div>
     <!-- MIDDLE SECTON  -->
     <div id="mid">
@@ -297,7 +291,7 @@
             <div id="left">
                 <div id="left1">
                     <p id="line4a" style="font-weight: bold;">Shipping Address</p>
-                    <a id="line4b" href="./shipping address form.html" style="color:#2E2C38 ;">add address</a>
+                    <a id="line4b"style="cursor:pointer; color:#2E2C38 ;" href="./shipping address form.html" >add address</a>
                 </div>
                 <br>
                 <p id="address" href="" >Choose Address</p>
@@ -315,7 +309,7 @@
                     <p id="right4b">$1.29</p>
                 </div>
                 <hr id="right5">
-                <a href="./shipping.html"><button id="right6">Continue Checkout</button></a>
+                <a  href="./shipping.html"><button style="cursor:pointer;" id="right6">Continue Checkout</button></a>
                 <p id="right7">By clicking continue, you agree to the SHOP.COM</p>
                 <p id="right8"><a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>.</p>
                 <p id="right9">Let us know how we are doing <a href="#">Send Feedback</a></p>

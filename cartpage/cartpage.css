@@ -1,14 +1,15 @@
 
 
 .page{
+    
     display: flex;
     /* align-items: center; */
     justify-content: space-between;
+    
 }
 
-
-
 .cart-section{
+    /* z-index: -10; */
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -68,9 +69,10 @@
 }
 
 .price{
-    font-size: 24px;
+    font-size: 31px;
     font-weight: 100;
     margin-bottom: 6px;
+    margin-top: 12px;
 }
 
 .product-detail > p{
@@ -182,6 +184,7 @@
     margin-left: 206px;
     /* border: 1px solid black; */
     padding: 3px;
+
 }
 
 #promocode{
@@ -190,23 +193,34 @@
     font-size: 16px;
 }
 
+
 #apply-promocode{
     width: 150px;
-    height: 40px;
-    border-radius: 20px;
+    border-radius: 30px;
+    margin-left: 10px;
+    font-weight: 600;
+    font-size: 15px;
+}
+#apply-promocode:hover{
+    cursor: pointer;
+    background-color: #414467;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    
 }
 
 #proceed{
-    width: 160px;
-    height: 40px;
+    width: 40%;
+    /* height: 40px; */
     border-radius: 20px;
-    margin-left: 306px;
+    margin-left: 60%;
     margin-top: 12px;
     background-color: #414467;
     color: white;
     font-size: 15px;
     font-weight: bold;
-    padding: 1px;
+    padding: 10px 0px;
 }
 
 #proceed:hover{
@@ -263,4 +277,9 @@
 
 #card img{
     width: 30px;
+}
+#narayan{
+    border-radius: 0px;
+    border:none;
+    background: transparent
 }
