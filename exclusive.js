@@ -169,4 +169,4 @@ function funsearch(){
     }
 }
 //username
-document.querySelector("#user-name1").textContent=JSON.parse(localStorage.getItem("userName"))||"Sign In"
+document.querySelector("#user-name").textContent=JSON.parse(localStorage.getItem("userName"))||"Sign In"

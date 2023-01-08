@@ -128,6 +128,30 @@
 
 
 
+  @media screen and (max-width: 1450px) {
+    #sub-cart-product{
+        display: flex;
+        margin: 6px;
+        /* border: 1px dashed grey; */
+        padding: 6px;
+        width: 90%;
+    
+    }
+  }
+
+  @media screen and (max-width: 1250px) {
+    #sub-cart-product{
+        display: flex;
+        margin: 6px;
+        /* border: 1px dashed grey; */
+        padding: 6px;
+        width: 80%;
+    
+    }
+  }
+
+
+
 
 
 
@@ -135,6 +159,7 @@
     display: flex;
     flex-direction: column;
     width: 500px;
+    /* width: 35%; */
     height: 500px;
     background-color: rgb(240, 238, 238);
     padding: 22px;
@@ -181,6 +206,7 @@
     color: white;
     font-size: 15px;
     font-weight: bold;
+    padding: 1px;
 }
 
 #proceed:hover{

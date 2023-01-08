@@ -199,7 +199,7 @@
 
         <div class="nav-first-section">
             <!-- ............................logo-div(1st-part-of-navbar)......................................................... -->
-            <div class="logo">
+            <div class="logo" style="cursor: pointer;">
                 <img src="https://img.shop.com/Image/resources/logos/shop-logo-us.svg" alt="" onclick="fun1()">
             </div>
 
@@ -320,8 +320,12 @@
                             </select>
                         </div>
                     </div>
-                    <button id="save-for-later">Save for Later</button>
-                    <button id="remove-cart" >Remove</button>
+                    <div class="two-buttons">
+                        <button id="save-for-later">Save for Later</button>
+                        <button id="remove-cart" >Remove</button>
+                    </div>
+                    
+                    
                 </div>
             </div>
         </div>
@@ -338,7 +342,7 @@
                     <input type="submit" id="apply-promocode">
                 </form>
             </div>
-            <button id="proceed" onclick="proceedtopayment()">proceed to chekout</button>
+            <button id="proceed" onclick="proceedtopayment()">Proceed to Checkout</button>
             <div class="checkout">
                 <p>Or checkout with</p>
                 <button id="paypal"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/PayPal_logo.svg/2560px-PayPal_logo.svg.png" alt=""></button>

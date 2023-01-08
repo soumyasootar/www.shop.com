@@ -518,3 +518,5 @@ document.getElementById("submitfeedback").addEventListener("click",function(){
         alert("Thank you for your valuable feedback!!!");
     }
 });
+
+document.querySelector("#user-name").textContent=JSON.parse(localStorage.getItem("userName"))||"Sign In"
