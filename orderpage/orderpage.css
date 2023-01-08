@@ -42,7 +42,7 @@
 
 .price-detail{
     display: flex;
-    margin-bottom: 6px;
+    margin-bottom: -16px;
 }
 
 .price-detail img{
@@ -55,6 +55,7 @@
 .product-name{
     font-size: 20px;
     margin-bottom: 6px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .price{
@@ -98,3 +99,10 @@
     background-color: #414467;
     color: white;
 }
+
+#sub-cart-product{
+    padding: 15px ;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+/* .........................RAting....................... */

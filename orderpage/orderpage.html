@@ -209,6 +209,47 @@ a:hover {
     font-size: 15px;
 }
 
+
+/* .....................................Text Animation................................................... */
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+  font-size: clamp(2rem, 2.8vw, 5rem);
+  font-family: Raleway;
+  font-weight: bold;
+  position: absolute;
+  left: 60%;
+  top:65%;
+  z-index: -10;
+  /* top:-350px */
+}
+
+.typewriter {
+	width: 21.5ch;
+	white-space: nowrap;
+	overflow: hidden;
+	border-right: 4px solid #212121;
+	animation: cursor 1s step-start infinite, 
+    text 5s steps(18) alternate infinite;
+}
+
+@keyframes cursor {
+	0%, 100% { 
+    border-color: #212121; 
+  }
+}
+
+@keyframes text {
+	0% { 
+    width: 0; 
+  }
+	100% { 
+    width: 21.5ch; 
+  }
+}
     </style>
 </head>
 
@@ -297,8 +338,18 @@ a:hover {
  
                 </div>
             </div>
-        </div>  
+        </div> 
+        
+<!-- .......................................text animation html................................................................. -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700">
+
+        <div class="container">
+        <div class="typewriter">Thank You, For odering from here</div>
+        </div>
+
     </div>
+
+
 </body>
 </html>
 
