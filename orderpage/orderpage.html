@@ -211,24 +211,27 @@ a:hover {
 
 
 /* .....................................Text Animation................................................... */
-
+.page{
+    display: flex;
+}
 .container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   /* height: 100vh; */
-  font-size: clamp(2rem, 2.8vw, 5rem);
+  font-size: 36px;
   font-family: Raleway;
   font-weight: bold;
   position: absolute;
-  left: 60%;
+  left: 48%;
   top:65%;
   z-index: -10;
   /* top:-350px */
 }
 
 .typewriter {
-	width: 21.5ch;
+	/* width: 21.5ch; */
 	white-space: nowrap;
 	overflow: hidden;
 	border-right: 4px solid #212121;
@@ -247,7 +250,7 @@ a:hover {
     width: 0; 
   }
 	100% { 
-    width: 21.5ch; 
+    width: 40ch; 
   }
 }
     </style>
@@ -344,7 +347,7 @@ a:hover {
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700">
 
         <div class="container">
-        <div class="typewriter">Thank You, For odering from here</div>
+        <div class="typewriter"><span id="user" style="color:orangered; font-style: italic; "></span> for purchasing from us! </div>
         </div>
 
     </div>

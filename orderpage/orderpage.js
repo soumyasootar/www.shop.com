@@ -41,3 +41,4 @@ function showdata(mensData){
     //username
     document.querySelector("#user-name").textContent=JSON.parse(localStorage.getItem("userName"))||"Sign In"
 
+    document.querySelector("#user").textContent="Thank you "+JSON.parse(localStorage.getItem("userName"))||"";
