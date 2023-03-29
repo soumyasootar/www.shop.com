@@ -1,7 +1,7 @@
 # www.shop.com
 PT-WEB-09 || UNIT-4 || GROUP 7|| Construct Week Project || 5 Days
 
-Unit-5 Construct Week project
+Unit-4 Construct Week project
 ## DEPLOYED LINK :-https://shopclone10.netlify.app/project.html
 
 ##TEAM MEMBERS 
